@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NexialBusiness — Hub 5.0</title>
+  <style>
+    :root{
+      --bg:#0b0e12;
+      --panel:#0f141c;
+      --card:#111925;
+      --text:#e8f1ff;
+      --muted:#9db0c6;
+      --accent:#a3e635;    /* lime */
+      --accent2:#22d3ee;   /* cyan */
+      --accent3:#f59e0b;   /* amber */
+      --ring:rgba(163,230,53,.22);
+      --shadow:rgba(0,0,0,.25);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu;
+      background:
+        radial-gradient(1200px 800px at 80% -10%, rgba(163,230,53,.08), transparent 60%),
+        radial-gradient(900px 600px at -10% 20%, rgba(34,211,238,.08), transparent 60%),
+        var(--bg);
+      color:var(--text);
+    }
+    /* HERO */
+    header{
+      padding:56px 20px 32px; text-align:center; position:relative; overflow:hidden;
+      background:linear-gradient(180deg, #0c131d 0%, rgba(12,19,29,.92) 60%, transparent 100%);
+    }
+    .brand{display:inline-block;padding:6px 12px;border-radius:999px;
+      background:linear-gradient(90deg,var(--accent),var(--accent2)); color:#0b0e12;
+      font-weight:800; font-size:12px; letter-spacing:.4px;
+      box-shadow:0 0 0 6px var(--ring);
+    }
+    h1{max-width:1000px;margin:18px auto 10px;font-size:36px;line-height:1.1}
+    .subtitle{max-width:940px;margin:8px auto 18px;color:var(--muted);font-size:18px}
+    .cta-row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;
+      border:1px solid transparent;font-weight:700;font-size:15px;transition:.2s}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#0b0e12}
+    .btn-primary:hover{transform:translateY(-1px)}
+    .btn-ghost{background:rgba(255,255,255,.04);color:var(--text);border-color:rgba(255,255,255,.14)}
+    .btn-ghost:hover{background:rgba(255,255,255,.08)}
+    .ribbon{max-width:980px;margin:16px auto 0;color:var(--muted);
+      border:1px dashed rgba(255,255,255,.16);border-radius:12px;padding:12px}
+    /* WRAP */
+    .wrap{max-width:1200px;margin:28px auto 60px;padding:0 20px}
+    /* GRID CARDS */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    @media(max-width:1000px){.grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:680px){.grid{grid-template-columns:1fr}}
+    .card{
+      background:var(--card); border:1px solid rgba(255,255,255,.06); border-radius:14px;
+      padding:18px; display:flex; flex-direction:column; gap:10px;
+      box-shadow:0 10px 30px var(--shadow);
+    }
+    .tag{display:inline-block;padding:4px 10px;border-radius:999px;font-size:12px;font-weight:700;
+      color:#0b0e12; background:linear-gradient(90deg,var(--accent3),var(--accent2)); width:max-content}
+    .card h3{margin:2px 0 0;font-size:20px}
+    .card p{margin:0;color:var(--muted);font-size:15px}
+    .links{display:flex;gap:10px;flex-wrap:wrap;margin-top:8px}
+    .link{display:inline-block;padding:10px 12px;border-radius:10px;text-decoration:none;font-weight:700;
+      border:1px solid rgba(255,255,255,.14); color:var(--text); background:rgba(255,255,255,.04)}
+    .link:hover{background:rgba(255,255,255,.08)}
+    /* SEÇÕES */
+    section{background:var(--panel);border:1px solid rgba(255,255,255,.06);border-radius:14px;padding:22px;margin:18px 0}
+    section h2{margin:0 0 8px;color:var(--accent);font-size:22px}
+    ul{margin:10px 0 0;padding-left:18px}
+    li{margin:6px 0;color:var(--muted)}
+    footer{color:var(--muted);text-align:center;padding:28px 0 40px}
+  </style>
+</head>
+<body>
+  <header>
+    <span class="brand">NEXIALBUSINESS • HUB 5.0</span>
+    <h1>Universo 5.0 — Programas para Liderar a Próxima Revolução</h1>
+    <p class="subtitle">
+      Páginas oficiais dos cursos e manifestos 5.0. Ciência, tecnologia e estratégia para <strong>transformar mercados</strong>.
+      Selecione um tema abaixo para acessar a página completa.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="autor.html">👤 Sobre Claude Cutrim</a>
+      <a class="btn btn-ghost" href="mailto:drclaudiocutrim@gmail.com">📧 Contato</a>
+      <a class="btn btn-ghost" href="https://wa.me/5591980144854" target="_blank">📱 WhatsApp</a>
+    </div>
+    <div class="ribbon">Dica: use este hub como vitrine central. Atualize links conforme publicar novas páginas.</div>
+  </header>
+
+  <main class="wrap">
+    <!-- GRADE DE CURSOS/MANIFESTOS -->
+    <div class="grid">
+      <article class="card">
+        <span class="tag">Saúde</span>
+        <h3>Hospital 5.0</h3>
+        <p>Roteiro executivo para substituir o modelo hospitalar tradicional por ecossistemas inteligentes.</p>
+        <div class="links">
+          <a class="link" href="hospital 5.html">Abrir página</a>
+          <a class="link" href="saúde 5.html">Saúde 5.0 (visão ampla)</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Vida</span>
+        <h3>Vida 5.0</h3>
+        <p>Longevidade prática, biotecnologia, neuroeconomia e novos contratos de existência.</p>
+        <div class="links">
+          <a class="link" href="vida 5_1.html">Abrir página</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Varejo</span>
+        <h3>Varejo 5.0</h3>
+        <p>Do consumo passivo ao consumo criativo. Como tornar gigantes do varejo irrelevantes.</p>
+        <div class="links">
+          <a class="link" href="varejo 5.html">Abrir página</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Habitação</span>
+        <h3>Habitação / Interiores 5.0</h3>
+        <p>Materiais avançados, modularidade e automação: moradia como plataforma tecnológica.</p>
+        <div class="links">
+          <a class="link" href="habitacao interiores.html">Abrir página</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Ambiente</span>
+        <h3>Meio Ambiente 5.0</h3>
+        <p>Sustentabilidade como negócio: métricas, tecnologias e ganhos reais (não só discurso).</p>
+        <div class="links">
+          <a class="link" href="meio ambiente 5.html">Abrir página</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">IA</span>
+        <h3>IA 5.0</h3>
+        <p>Inteligência Artificial aplicada a P&amp;L, compliance e diferenciais competitivos defensáveis.</p>
+        <div class="links">
+          <a class="link" href="ia 5.html">Abrir página</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <span class="tag">Turismo</span>
+        <h3>Hotel 5.0</h3>
+        <p>Experiências imersivas, automação e dados para reescrever margens na hotelaria.</p>
+        <div class="links">
+          <a class="link" href="hotel 5.html">Abrir página</a>
+        </div>
+      </article>
+
+      <!-- Opcional: Supermercado 5.0 (se estiver publicado ao lado deste hub) -->
+      <!--
+      <article class="card">
+        <span class="tag">Alimentos</span>
+        <h3>Supermercado 5.0</h3>
+        <p>Destruição criativa do varejo alimentar: dados, cadeia fria e automação como moats.</p>
+        <div class="links">
+          <a class="link" href="supermercado 5.html">Abrir página</a>
+        </div>
+      </article>
+      -->
+    </div>
+
+    <!-- BLOCO INSTITUCIONAL -->
+    <section>
+      <h2>Como usar este Hub</h2>
+      <ul>
+        <li>Cada card abre uma página específica do curso/manifesto 5.0.</li>
+        <li>Atualize títulos/subtítulos para refletir a proposta comercial de cada curso.</li>
+        <li>Mantenha o <em>Sobre</em> (autor.html) atualizado como peça de autoridade e visão.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Contato</h2>
+      <ul>
+        <li>WhatsApp: <a href="https://wa.me/5591980144854" target="_blank">+55 91 98014-4854</a></li>
+        <li>E-mail: <a href="mailto:drclaudiocutrim@gmail.com">drclaudiocutrim@gmail.com</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>© 2025 NexialBusiness • Hub 5.0</footer>
+</body>
+</html>

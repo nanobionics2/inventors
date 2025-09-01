@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>For Inventors — Medicina (Índice)</title>
+<style>
+:root{
+  /* Paleta For Inventors: dark premium + dourado + ciano */
+  --bg:#0c0c0e; --hero:#121216; --panel:#15161a; --card:#191a20;
+  --text:#f4f4f6; --muted:#b8bdc9;
+  --accent:#fcd14f;          /* dourado */
+  --accent-2:#22d3ee;        /* ciano */
+  --whatsapp:#25d366;        /* CTA WhatsApp */
+  --email:#3b82f6;           /* CTA E-mail   */
+  --shadow:rgba(252,209,79,.14);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:"Segoe UI",Tahoma,Arial,Helvetica,sans-serif;
+  background:
+    radial-gradient(1200px 800px at 90% -10%, rgba(252,209,79,.08), transparent 60%),
+    radial-gradient(900px 700px at -10% 25%, rgba(34,211,238,.08), transparent 60%),
+    var(--bg);
+  color:var(--text); line-height:1.65;
+}
+header{
+  background:linear-gradient(180deg,var(--hero) 0%, rgba(18,18,22,.92) 60%, transparent 100%);
+  padding:56px 18px 28px; text-align:center;
+}
+.badge{
+  display:inline-block; padding:6px 12px; border-radius:999px;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  color:#0b0b0e; font-weight:800; font-size:12px; letter-spacing:.4px;
+  box-shadow:0 10px 30px var(--shadow);
+}
+h1{margin:16px auto 8px; max-width:1050px; font-size:36px; line-height:1.15}
+.subtitle{color:var(--muted); max-width:960px; margin:8px auto 0; font-size:18px}
+
+.wrap{max-width:1200px; margin:26px auto 60px; padding:0 18px}
+.section{
+  background:var(--panel); border:1px solid rgba(255,255,255,.08);
+  border-radius:14px; padding:22px 18px; margin:18px 0;
+  box-shadow:0 10px 30px var(--shadow);
+}
+.section h2{margin:0 0 12px; font-size:24px; color:var(--accent)}
+.section p{margin:0 0 10px; color:var(--muted)}
+.grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+@media (max-width:1000px){ .grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:640px){ .grid{grid-template-columns:1fr} h1{font-size:28px} }
+
+.card{
+  background:var(--card); border:1px solid rgba(255,255,255,.08);
+  border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:10px;
+  position:relative; overflow:hidden;
+}
+.card::after{
+  content:""; position:absolute; inset:auto -40px 0 -40px; height:6px;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2)); opacity:.35;
+}
+.card h3{margin:0; font-size:20px}
+.card p{margin:0; color:#e6e7ee}
+.tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:2px}
+.tag{
+  font-size:12px; padding:4px 8px; border-radius:999px;
+  border:1px solid rgba(255,255,255,.14); color:#dfe4f4;
+  background:rgba(255,255,255,.04)
+}
+.addon{border-color:rgba(252,209,79,.35); color:var(--accent); background:rgba(252,209,79,.08)}
+.actions{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+.btn{
+  display:inline-block; text-decoration:none; font-weight:700; font-size:14px;
+  padding:10px 14px; border-radius:10px; border:1px solid transparent; transition:.2s
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#0b0b0e}
+.btn-ghost{background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.16); color:#f4f4f6}
+.btn-whats{background:var(--whatsapp); color:#071d10}
+.btn-mail{background:var(--email); color:#081523}
+.manifesto{
+  background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08);
+  border-radius:12px; padding:14px; margin-top:10px; color:#d8dbea;
+}
+footer{text-align:center; color:var(--muted); font-size:14px; padding:28px 0 40px}
+</style>
+</head>
+<body>
+<header>
+  <span class="badge">FOR INVENTORS • Medicina</span>
+  <h1>Índice de Cursos Médicos — For Inventors</h1>
+  <p class="subtitle">Todos os cursos focados em <strong>inovação radical</strong>, novos paradigmas e criação de negócios com ciência e tecnologia.</p>
+</header>
+
+<main class="wrap">
+
+  <section class="section">
+    <h2>Cursos Clínicos &amp; Transversais</h2>
+    <p>Escolha um curso para ver a landing completa, investimento e possibilidade de módulo cirúrgico (add-on).</p>
+    <div class="grid">
+
+      <!-- CARDIOLOGIA -->
+      <article class="card">
+        <h3>Cardiologia For Inventors</h3>
+        <p>IA diagnóstica, materiais, economia das doenças e modelos de negócio.</p>
+        <div class="tags">
+          <span class="tag">IA</span><span class="tag">Materiais</span><span class="tag">Economia</span>
+          <span class="tag addon">Add-on Cirúrgico</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="cardiologia%20for%20inventors.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="cardiologia%20for%20inventors.html#investimento">Investimento</a>
+          <a class="btn btn-ghost" href="cardiologia%20for%20inventors.html#modulo-cirurgico">Módulo Cirúrgico</a>
+          <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+          <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+        </div>
+      </article>
+
+      <!-- NEUROLOGIA -->
+      <article class="card">
+        <h3>Neurologia &amp; Neurocirurgia For Inventors</h3>
+        <p>Interfaces, neuroeconomia e dispositivos terapêuticos.</p>
+        <div class="tags">
+          <span class="tag">Neuro</span><span class="tag">Dispositivos</span><span class="tag">Economia</span>
+          <span class="tag addon">Add-on Cirúrgico</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="Neurologia.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="Neurologia.html#investimento">Investimento</a>
+          <a class="btn btn-ghost" href="Neurologia.html#modulo-cirurgico">Módulo Cirúrgico</a>
+          <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+          <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+        </div>
+      </article>
+
+      <!-- ONCOLOGIA -->
+      <article class="card">
+        <h3>Oncologia For Inventors</h3>
+        <p>Bioengenharia, drug delivery, triagem inteligente e negócio orientado a desfecho.</p>
+        <div class="tags">
+          <span class="tag">Biotech</span><span class="tag">Drug Delivery</span><span class="tag">Desfecho</span>
+          <span class="tag addon">Add-on Cirúrgico</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="Oncologia.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="Oncologia.html#investimento">Investimento</a>
+          <a class="btn btn-ghost" href="Oncologia.html#modulo-cirurgico">Módulo Cirúrgico</a>
+          <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+          <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+        </div>
+      </article>
+
+      <!-- ORTOPEDIA -->
+      <article class="card">
+        <h3>Ortopedia For Inventors</h3>
+        <p>Materiais, robótica assistiva e modelos de reabilitação escalável.</p>
+        <div class="tags">
+          <span class="tag">Biomateriais</span><span class="tag">Robótica</span><span class="tag">Rehab</span>
+          <span class="tag addon">Procedimentos</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="ortopedia.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="ortopedia.html#investimento">Investimento</a>
+          <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+          <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+        </div>
+      </article>
+
+      <!-- DERMATOLOGIA -->
+      <article class="card">
+        <h3>Dermatologia &amp; Estética For Inventors</h3>
+        <p>Biotech, dispositivos, IA de imagem e oportunidades D2C.</p>
+        <div class="tags">
+          <span class="tag">Biotech</span><span class="tag">Imagem</span><span class="tag">D2C</span>
+          <span class="tag addon">Procedimentos</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="dermatologia.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="dermatologia.html#investimento">Investimento</a>
+          <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+          <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+        </div>
+      </article>
+
+      <!-- PEDIATRIA -->
+      <article class="card">
+        <h3>Pediatria For Inventors</h3>
+        <p>Saúde infantil, devices lúdicos e prevenção orientada a dados.</p>
+        <div class="tags">
+          <span class="tag">Devices</span><span class="tag">Prevenção</span><span class="tag">UX</span>
+          <span class="tag addon">Add-on Cirúrgico</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="pediatria.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="pediatria.html#investimento">Investimento</a>
+          <a class="btn btn-ghost" href="pediatria.html#modulo-cirurgico">Módulo Cirúrgico</a>
+          <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+          <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+        </div>
+      </article>
+
+      <!-- MEDICINA DO ESPORTE -->
+      <article class="card">
+        <h3>Medicina do Esporte For Inventors</h3>
+        <p>Biomecânica, wearables, prevenção e produtos de performance.</p>
+        <div class="tags">
+          <span class="tag">Wearables</span><span class="tag">Biomecânica</span><span class="tag">Produtos</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="medicina_esportiva.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="medicina_esportiva.html#investimento">Investimento</a>
+          <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+          <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+        </div>
+      </article>
+
+      <!-- MEDICINA DO TRABALHO -->
+      <article class="card">
+        <h3>Medicina do Trabalho For Inventors</h3>
+        <p>Safety by design, IA preditiva e engenharia do trabalho aplicada.</p>
+        <div class="tags">
+          <span class="tag">Segurança</span><span class="tag">IA Preditiva</span><span class="tag">Ergo</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="medicina_trabalho.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="medicina_trabalho.html#investimento">Investimento</a>
+          <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+          <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+        </div>
+      </article>
+
+      <!-- GERIATRIA -->
+      <article class="card">
+        <h3>Geriatria For Inventors</h3>
+        <p>Longevidade, assistive tech, modelos domiciliares e recorrência.</p>
+        <div class="tags">
+          <span class="tag">Assistive</span><span class="tag">Home</span><span class="tag">Recorrência</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="Geriatria%20For%20Inventors.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="Geriatria%20For%20Inventors.html#investimento">Investimento</a>
+          <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+          <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+        </div>
+      </article>
+
+      <!-- SAÚDE PÚBLICA -->
+      <article class="card">
+        <h3>Saúde Pública For Inventors</h3>
+        <p>Interoperabilidade, vigilância inteligente e modelos sustentáveis.</p>
+        <div class="tags">
+          <span class="tag">Data Mesh</span><span class="tag">Vigilância</span><span class="tag">Valor</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="sa%C3%BAde_p%C3%BAblica.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="sa%C3%BAde_p%C3%BAblica.html#investimento">Investimento</a>
+          <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+          <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+        </div>
+      </article>
+
+      <!-- DERMATOLOGIA JÁ INCLUÍDA ACIMA / OUTROS CURSOS FUTUROS PODem ENTRAR AQUI -->
+
+    </div>
+
+    <div class="manifesto">
+      <strong>Observação:</strong> muitos cursos oferecem <em>Módulo Cirúrgico (Add-on)</em> com robótica, automação &amp; controle,
+      IA, materiais, engenharia de tecidos, nano/microtecnologias, biotech, economia das doenças e direito aplicado — tudo em linguagem
+      simples para inventores empreendedores. Procure o botão <em>“Módulo Cirúrgico”</em> no card ou na landing.
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2025 For Inventors. Todos os direitos reservados.</footer>
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Direito Penal For Inventors</title>
+  <style>
+    :root{
+      /* Paleta Direito Penal: azul petróleo + magenta neon + ciano */
+      --bg:#0b0f14;
+      --panel:#111826;
+      --header:#0e2433;
+      --text:#eaf2ff;
+      --muted:#a7b4c7;
+      --accent:#ff4d6d;     /* magenta/rose */
+      --accent-2:#7dd3fc;   /* ciano claro */
+      --ok:#25d366;         /* WhatsApp */
+      --mail:#3b82f6;       /* e-mail */
+      --shadow:0 16px 36px rgba(255,77,109,.18);
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:"Segoe UI",Tahoma,Arial,Helvetica,sans-serif;
+      background:
+        radial-gradient(1200px 820px at 90% -10%, rgba(125,211,252,.08), transparent 60%),
+        radial-gradient(900px 700px at -10% 25%, rgba(255,77,109,.08), transparent 60%),
+        var(--bg);
+      color:var(--text); line-height:1.7;
+    }
+    header{
+      background:linear-gradient(180deg,var(--header) 0%, rgba(14,36,51,.92) 62%, transparent 100%);
+      padding:56px 18px 28px; text-align:center;
+    }
+    .badge{
+      display:inline-block; padding:6px 12px; border-radius:999px;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:#0b0f14; font-weight:800; font-size:12px; letter-spacing:.45px;
+      box-shadow:0 10px 30px rgba(255,77,109,.25);
+    }
+    h1{margin:16px auto 8px; max-width:1050px; font-size:36px; line-height:1.15}
+    .subtitle{color:var(--muted); max-width:980px; margin:8px auto 0; font-size:18px}
+
+    .wrap{max-width:1000px; margin:26px auto 64px; padding:0 18px}
+    .block{
+      background:var(--panel); border:1px solid rgba(255,255,255,.08);
+      border-radius:14px; padding:24px 22px; margin:16px 0; box-shadow: var(--shadow);
+    }
+    .block h2{margin:0 0 12px; font-size:26px; color:var(--accent)}
+    p{margin:10px 0; color:var(--text)}
+    ul{margin:10px 0 0 20px; padding:0}
+    li{margin:8px 0}
+    a.link{color:var(--accent-2); text-decoration:none} a.link:hover{text-decoration:underline}
+
+    .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+    @media (max-width:1000px){ .grid{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:640px){ .grid{grid-template-columns:1fr} h1{font-size:28px} }
+
+    .card{
+      background:#132033; border:1px solid rgba(255,255,255,.08);
+      border-radius:12px; padding:16px; position:relative; overflow:hidden;
+    }
+    .card::after{
+      content:""; position:absolute; inset:auto -40px 0 -40px; height:4px;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2)); opacity:.38;
+    }
+    .card h3{margin:0 0 8px; font-size:18px}
+    .card p{margin:0; color:#dfe9f5}
+
+    .actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .btn{
+      display:inline-block; text-decoration:none; font-weight:800; font-size:14px;
+      padding:12px 16px; border-radius:10px; border:1px solid transparent; transition:.18s
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#0b0f14}
+    .btn-ghost{background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.16); color:var(--text)}
+    .btn-whats{background:var(--ok); color:#071d10}
+    .btn-mail{background:var(--mail); color:#081523}
+
+    .note{color:var(--muted); font-size:14px}
+    .ribbon{ text-align:center; margin:12px 0 2px}
+    .ribbon span{
+      display:inline-block; padding:10px 18px; border-radius:999px;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:#0b0f14; font-weight:800; box-shadow:0 12px 28px rgba(255,77,109,.25);
+    }
+
+    footer{text-align:center; color:var(--muted); font-size:14px; padding:28px 0 40px}
+  </style>
+</head>
+<body>
+
+<header>
+  <span class="badge">FOR INVENTORS • Direito Penal</span>
+  <h1>Direito Penal For Inventors</h1>
+  <p class="subtitle">Interligação entre crimes penais e trilhas tecnológicas — para prevenir, comprovar e resolver com ética, ciência de dados e plataformas.</p>
+</header>
+
+<main class="wrap">
+
+  <!-- O que é -->
+  <section class="block">
+    <h2>O que é o For Inventors?</h2>
+    <p>
+      O <strong>For Inventors</strong> é um estúdio-aprendizagem para transformar <em>invenções</em> em <strong>inovações de mercado</strong>.
+      No eixo penal, você conecta Direito, IA, blockchain/Web3, neuroeconomia e ciência da computação para
+      criar soluções preventivas, probatórias e de acordo — mantendo <em>devido processo</em>, direitos fundamentais e LGPD.
+    </p>
+    <div class="ribbon"><span>🧠 Curso Inédito — Formação Transdisciplinar de Alto Impacto</span></div>
+  </section>
+
+  <!-- Por que único -->
+  <section class="block">
+    <h2>Por que este curso é único?</h2>
+    <ul>
+      <li><strong>Sem silos:</strong> penal + IA + dados + Web3 + economia comportamental.</li>
+      <li><strong>Construção de produto:</strong> você pode sair com protótipos: fluxos ODR penal, cadeias de custódia, APIs de prova digital, dashboards de risco.</li>
+      <li><strong>Anti-Contenda e Ética:</strong> prevenção, proporcionalidade e explicabilidade — sem vieses, com governança.</li>
+      <li><strong>Incubação real:</strong> projetos evoluem na <a class="link" href="https://cerebral.top" target="_blank">Cerebral.top</a> (Seja Sócio).</li>
+    </ul>
+  </section>
+
+  <!-- Público-alvo -->
+  <section class="block">
+    <h2>Público-Alvo</h2>
+    <div class="grid">
+      <article class="card"><h3>Juristas & Compliance</h3><p>Advogados, MP, Defensoria, compliance e perícia digital.</p></article>
+      <article class="card"><h3>Tech & Dados</h3><p>Engenharia/Computação, IA, segurança da informação e produto.</p></article>
+      <article class="card"><h3>Executivos & GovTech</h3><p>Gestores públicos/privados e empreendedores de legal/security tech.</p></article>
+    </div>
+  </section>
+
+  <!-- Como funciona -->
+  <section class="block">
+    <h2>Como funciona</h2>
+    <ul>
+      <li><strong>Duração:</strong> 8 meses • 2 a 3 aulas/semana • 100% online (gravadas).</li>
+      <li><strong>Dinâmica:</strong> desafios criativos, estudos de caso e missões de validação.</li>
+      <li><strong>Fecho:</strong> MVP/PoC e possibilidade de sociedade em projetos do curso.</li>
+    </ul>
+    <div class="actions">
+      <a class="btn btn-primary" href="#investimento">💰 Ver Investimento</a>
+      <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">📱 WhatsApp</a>
+      <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">📧 E-mail</a>
+    </div>
+  </section>
+
+ <section class="block">
+  <h2>Interligações: Crimes Penais ↔ Trilhas Tecnológicas (ênfase na pesquisa do Prof. Dr. Claudio Cutrim)</h2>
+  <p class="note" style="margin-top:-4px">
+    Integrações alinhadas à Medicina Legal e Saúde Pública, Engenharia Mecânica, Ciência dos Materiais, IA & Computação,
+    Micro/Nanotecnologias, Neuroeconomia & Neurodireito, Ciência Ambiental e à Teoria do <strong>Estado Online</strong>.
+  </p>
+
+  <div class="grid">
+
+    <!-- Patrimoniais & Cibercrimes -->
+    <article class="card">
+      <h3>Crimes Patrimoniais &amp; Cibercrimes</h3>
+      <ul>
+        <li><strong>IA antifraude explicável</strong> (anomalias, phishing, engenharia social) com <em>behavioral cues</em> e nudges neuroeconômicos.</li>
+        <li><strong>Forense digital</strong> (OSINT, <em>device fingerprint</em>, grafos de transações) e <strong>materiais/tampers</strong> para lacres físicos de evidência.</li>
+        <li><strong>Contratos inteligentes</strong> de <em>pecúnia pactuada</em> (restituição/garantias) e <strong>dashboards anti-assimetria</strong> de informação.</li>
+      </ul>
+    </article>
+
+    <!-- Contra a Pessoa -->
+    <article class="card">
+      <h3>Crimes contra a Pessoa</h3>
+      <ul>
+        <li><strong>Alerta de risco</strong> (p.ex., violência doméstica) com consentimento, geofencing ético e <em>escalation by design</em>.</li>
+        <li><strong>Aplicativos de apaziguamento</strong> e <strong>retratação pactuada</strong> (quando legalmente cabível) sob protocolo de ODR e revisão humana.</li>
+        <li><strong>Prova médico-legal</strong> assistida (teleperícia, cadeia de custódia com <em>timestamp</em> imutável) e kits de coleta com selagem de materiais.</li>
+      </ul>
+    </article>
+
+    <!-- Administração Pública -->
+    <article class="card">
+      <h3>Crimes contra a Administração Pública</h3>
+      <ul>
+        <li><strong>Licitações em ledger</strong>, auditoria contínua e rastreabilidade de contratos.</li>
+        <li><strong>IA anticolusão</strong> (grafos, detecção de cartel) e análise de redes de influência.</li>
+        <li><strong>Módulos do Estado Online</strong>: consenso aplicativo, orçamento participativo verificável e trilhas de decisão auditáveis.</li>
+      </ul>
+    </article>
+
+    <!-- Lavagem & Financeiros -->
+    <article class="card">
+      <h3>Lavagem de Dinheiro &amp; Financeiros</h3>
+      <ul>
+        <li><strong>KYC/AML</strong>, análise on/off-chain e grafos de beneficiário final com explicabilidade.</li>
+        <li><strong>Monitoramento de mixers/carteiras</strong> preservando direitos e proporcionalidade sancionatória.</li>
+        <li><strong>Smart escrows</strong> para <em>pecúnia pactuada</em> e <strong>SAR</strong> automatizados com <em>human-in-the-loop</em>.</li>
+      </ul>
+    </article>
+
+    <!-- Organizações Criminosas -->
+    <article class="card">
+      <h3>Organizações Criminosas</h3>
+      <ul>
+        <li><strong>Graph analytics</strong> (comunidades, hubs, fluxos e logística).</li>
+        <li><strong>Modelos de corrida-ao-topo</strong> (incentivos neuroeconômicos para deserção/acordo).</li>
+        <li><strong>Arquitetura probatória</strong> multimodal (evidência física, digital e ambiental) com selos anti-violação de materiais.</li>
+      </ul>
+    </article>
+
+    <!-- Ambientais -->
+    <article class="card">
+      <h3>Crimes Ambientais</h3>
+      <ul>
+        <li><strong>Satélites, drones e IoT</strong> para detecção e correlação espaço-temporal (traços, rotas, hotspots).</li>
+        <li><strong>Tokenização de cadeias limpas</strong>, embargo inteligente e sanções proporcionais.</li>
+        <li><strong>Perícia ambiental automatizada</strong> (metadados imutáveis, sensores micro/nano, <em>lab-on-chip</em>).</li>
+      </ul>
+    </article>
+
+    <!-- Saúde Pública & Consumidor -->
+    <article class="card">
+      <h3>Crimes contra a Saúde Pública &amp; Consumidor</h3>
+      <ul>
+        <li><strong>Rastreabilidade anticounterfeit</strong> (fármacos/insumos) e cadeia fria monitorada.</li>
+        <li><strong>Vigilância de mercado</strong> e <em>recall</em> assistidos por IA com análise de risco-benefício (Economia das Doenças).</li>
+        <li><strong>ODR penal</strong> para reparação quando cabível, com escrows e <strong>redes sociais de autocuidado &amp; vigilância</strong> verificadas.</li>
+      </ul>
+    </article>
+
+    <!-- Sexuais -->
+    <article class="card">
+      <h3>Crimes Sexuais (online/offline)</h3>
+      <ul>
+        <li><strong>Detecção de grooming/assédio</strong> (políticas, <em>safe-by-design</em> e ferramentas seguras).</li>
+        <li><strong>Fluxos de denúncia</strong>, preservação de evidências (hashing, <em>sealed logs</em>) e apoio à vítima.</li>
+        <li><strong>Neurodireito</strong>: mitigação de coerção/viés e acolhimento informado.</li>
+      </ul>
+    </article>
+
+    <!-- Trânsito & Urbanos -->
+    <article class="card">
+      <h3>Crimes de Trânsito &amp; Urbanos</h3>
+      <ul>
+        <li><strong>Visão computacional</strong> para detecção em tempo real e provas proporcionais.</li>
+        <li><strong>Telemetria/IoT</strong> com desenho de incentivos (neuroeconomia aplicada; <em>usage-based justice</em>).</li>
+        <li><strong>Plataformas de acordo</strong> e recomposição de danos com garantia técnica-jurídica.</li>
+      </ul>
+    </article>
+
+  </div>
+
+  <p class="note" style="margin-top:10px">
+    Inclui <strong>sistemas de consenso aplicativos</strong>, <strong>direito anti-contenda</strong>, mecanismos de
+    <strong>anti-assimetria de informações</strong>, <strong>aplicativos de apaziguamento</strong> e de
+    <strong>retratação pactuada</strong> (quando juridicamente possível), além de contratos de <strong>pecúnia pactuada</strong> com
+    criptomoedas/escrows. Tudo com <strong>devido processo, presunção de inocência, proporcionalidade e LGPD</strong>,
+    <em>explainable AI</em>, auditoria, trilhas de decisão e revisão humana.
+  </p>
+</section>
+
+    </div>
+   
+  </section>
+
+  <!-- Conteúdo Programático -->
+  <section class="block">
+    <h2>Conteúdo Programático</h2>
+    <ul>
+   <li>• <strong>Direito Anti-Contenda</strong> e <strong>Anti-Assimetria</strong> — desenho de acordos, prevenção e redução de litígio por arquitetura de incentivos.</li>
+    <li>• <strong>Direito Penal Comportamental</strong> &amp; <strong>Neurodireito</strong> — heurísticas, vieses, nudges e tomada de decisão sob risco.</li>
+    <li>• <strong>IA Forense Explicável</strong> — detecção de anomalias, atribuição responsável, fairness, auditoria e governança.</li>
+    <li>• <strong>Blockchain/Web3</strong> — prova digital, cadeia de custódia, contratos de <em>pecúnia pactuada</em>, identidade e trilhas imutáveis.</li>
+    <li>• <strong>Teoria do Estado Online</strong> aplicada à Justiça — consenso aplicativo, módulos jurisdicionais e governança verificável.</li>
+    <li>• <strong>Computação &amp; Prova Digital</strong> — OSINT, logs selados, <em>timestamping</em>, grafos e correlação multimodal.</li>
+    <li>• <strong>Robótica, Automação &amp; Controle</strong> — inspeção, coleta assistida, <em>chain-of-custody</em> e execução supervisionada.</li>
+    <li>• <strong>Eng. Mecânica &amp; Ciência dos Materiais</strong> — lacres/tampers, embalagens anti-violação, sensores e dispositivos probatórios.</li>
+    <li>• <strong>Micro &amp; Nanotecnologias</strong> — <em>lab-on-chip</em>, biossensores e traçadores para perícia e compliance.</li>
+    <li>• <strong>Medicina Legal &amp; Saúde Pública</strong> — protocolos de documentação, anticounterfeit de insumos e vigilância sanitária inteligente.</li>
+    <li>• <strong>Ciência Ambiental Forense</strong> — satélites/drones/IoT, tokenização de cadeias limpas e cálculo de dano ambiental.</li>
+    <li>• <strong>Economia das Doenças &amp; Neuroeconomia</strong> — custo-efetividade de sanções, adesão a medidas e desenho de incentivos.</li>
+    <li>• <strong>ODR Penal &amp; Plataformas</strong> — acordo, reparação e reabilitação assistidos (quando cabível), com revisão humana e LGPD.</li>
+    <li>• <strong>Modelagem de Negócios Jurídicos</strong> &amp; captação — <em>legal/security tech</em> B2B/B2G, parcerias e IP.</li>
+      <li>• <strong>Trânsito & Urbanos</strong>: visão computacional e telemetria</li>
+           <li>• Economia Política Descentralizada aplicadas à justiça</li>
+    </ul>
+  </section>
+
+  <!-- Metodologia -->
+  <section class="block">
+    <h2>Metodologia do Curso</h2>
+    <ul>
+      <li><strong>Aprender criando:</strong> cada módulo entrega artefatos (fluxos ODR, contratos inteligentes, guias de prova digital, dashboards).</li>
+      <li><strong>Integração prática:</strong> Direito + IA + Web3 + neuroeconomia em problemas penais reais.</li>
+      <li><strong>Casos de alto impacto:</strong> prevenção, investigação, prova e acordo — com governança ética.</li>
+      <li><strong>Incubadora online:</strong> colaboração contínua via <a class="link" href="https://cerebral.top" target="_blank">Cerebral.top</a>.</li>
+    </ul>
+  </section>
+
+  <!-- Laboratório prático -->
+  <section class="block">
+    <h2>Módulo Prático Complementar — Laboratório de Prova Digital & Cadeia de Custódia</h2>
+    <ul>
+      <li>Coleta, preservação e verificação com logs imutáveis e <em>timestamping</em>.</li>
+      <li>Automação de relatórios, explicabilidade e auditoria de decisões.</li>
+      <li>Simulações de ODR penal (quando cabível) e rotas de acordo/ reparação.</li>
+      <li>Salvaguardas: revisão humana, <em>privacy by design</em> e mitigação de viés.</li>
+    </ul>
+    <div class="actions">
+      <a class="btn btn-ghost" href="#contato-modulo">Solicitar inclusão do módulo</a>
+      <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">📱 WhatsApp — Incluir Módulo</a>
+      <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">📧 E-mail — Incluir Módulo</a>
+    </div>
+  </section>
+
+  <!-- Certificação & investimento -->
+  <section id="investimento" class="block">
+    <h2>Certificação, Impacto Econômico e Caminhos de Sociedade</h2>
+    <p>
+      <strong>Curso Livre com Certificação.</strong> Você cria <strong>produtos, plataformas e legal/security techs</strong>.
+      Ao final, pode <strong>escalar sua própria empresa</strong> ou tornar-se <strong>sócio</strong> de projetos incubados.
+    </p>
+    <ul>
+      <li><strong>Sócio Técnico</strong> — desenvolvimento e integrações (IA, Web3, APIs).</li>
+      <li><strong>Sócio Inventor</strong> — propriedade intelectual (métodos, fluxos, interfaces).</li>
+      <li><strong>Sócio Operacional</strong> — operação e expansão das soluções.</li>
+      <li><strong>Sócio Comercial</strong> — canais B2B/B2G, parcerias e vendas.</li>
+      <li><strong>Consultor/Franqueado</strong> — replicação regional.</li>
+    </ul>
+    <div class="actions">
+      <a class="btn btn-primary" href="for-inventors-investimento.html">Abrir página de Investimento</a>
+      <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">📱 Falar no WhatsApp</a>
+      <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">📧 Falar por E-mail</a>
+    </div>
+    <p class="note" style="margin-top:10px">Observância estrita a direitos fundamentais, garantias e legislação vigente (Brasil e exterior).</p>
+  </section>
+
+</main>
+
+<footer>© 2025 For Inventors. Todos os direitos reservados.</footer>
+</body>
+</html>

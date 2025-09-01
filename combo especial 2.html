@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Combo Especial — Medicina do Trabalho + Engenharia do Trabalho | For Inventors</title>
+<style>
+  :root{
+    /* Paleta "industrial": aço escuro + âmbar + ciano */
+    --bg:#0b0d11;          /* fundo */
+    --hero:#0e121a;        /* topo/hero */
+    --panel:#121826;       /* containers */
+    --card:#162133;        /* cards */
+    --text:#eef4ff;        /* texto principal */
+    --muted:#9fb0c6;       /* texto secundário */
+    --amber:#fbbf24;       /* âmbar (brand) */
+    --cyan:#22d3ee;        /* ciano detalhe */
+    --ok:#25d366;          /* WhatsApp */
+    --mail:#3b82f6;        /* e-mail */
+    --shadow: 0 18px 40px rgba(34,211,238,.12);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family:"Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    background:
+      radial-gradient(1200px 700px at 110% -10%, rgba(34,211,238,.10), transparent 60%),
+      radial-gradient(900px 600px at -10% 20%, rgba(251,191,36,.10), transparent 60%),
+      var(--bg);
+    color:var(--text); line-height:1.65;
+  }
+
+  header{
+    background:linear-gradient(180deg, var(--hero) 0%, rgba(14,18,26,.92) 70%, transparent 100%);
+    text-align:center; padding:56px 18px 28px;
+  }
+  .badge{
+    display:inline-block; padding:6px 12px; border-radius:999px;
+    background:linear-gradient(90deg, var(--amber), var(--cyan));
+    color:#0b0d11; font-weight:800; font-size:12px; letter-spacing:.4px;
+    box-shadow:0 10px 30px rgba(251,191,36,.18);
+  }
+  h1{margin:16px auto 10px; max-width:980px; font-size:34px; line-height:1.15}
+  .subtitle{color:var(--muted); max-width:900px; margin:8px auto 0; font-size:18px}
+
+  .wrap{max-width:1100px; margin:28px auto 70px; padding:0 18px}
+
+  .hero-cta{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:16px}
+  .btn{display:inline-block; text-decoration:none; font-weight:800; font-size:14px; padding:12px 16px; border-radius:12px; border:1px solid transparent; transition:.18s}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-primary{background:linear-gradient(90deg,var(--amber),var(--cyan)); color:#0b0d11}
+  .btn-ghost{background:rgba(255,255,255,.06); color:var(--text); border-color:rgba(255,255,255,.12)}
+  .btn-whats{background:var(--ok); color:#061b10}
+  .btn-mail{background:var(--mail); color:#081523}
+
+  section.block{
+    background:var(--panel); border:1px solid rgba(255,255,255,.08);
+    border-radius:16px; padding:24px; margin:18px 0; box-shadow: var(--shadow);
+  }
+  section.block h2{margin:0 0 12px; font-size:24px; color:var(--amber)}
+  section.block p{margin:0 0 10px; color:#e9eeff}
+
+  .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+  @media (max-width:1000px){ .grid{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:640px){ .grid{grid-template-columns:1fr} h1{font-size:28px} }
+
+  .card{
+    background:var(--card); border:1px solid rgba(255,255,255,.08);
+    border-radius:14px; padding:16px; display:flex; flex-direction:column; gap:10px; position:relative; overflow:hidden;
+  }
+  .card::after{
+    content:""; position:absolute; inset:auto -40px 0 -40px; height:4px;
+    background:linear-gradient(90deg, var(--amber), var(--cyan)); opacity:.4;
+  }
+  .card h3{margin:0; font-size:18px}
+  .card p{margin:0; color:#dfe6ff}
+
+  ul.clean{margin:8px 0 0 18px; padding:0}
+  ul.clean li{margin:6px 0}
+
+  .price{
+    display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;
+    background:linear-gradient(90deg, rgba(251,191,36,.08), rgba(34,211,238,.08));
+    border:1px dashed rgba(255,255,255,.14); padding:18px; border-radius:12px; margin:12px 0 6px;
+  }
+  .price strong{font-size:28px; color:var(--amber)}
+  .note{color:var(--muted); font-size:14px}
+
+  .divider{height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.18), transparent); margin:18px 0}
+  footer{text-align:center; color:var(--muted); font-size:14px; padding:28px 0 40px}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge">COMBO ESPECIAL • FOR INVENTORS</span>
+  <h1>Medicina do Trabalho + Engenharia do Trabalho</h1>
+  <p class="subtitle">Saúde ocupacional, segurança e produtividade — integradas por IA, automação, materiais e economia das doenças.</p>
+
+  <div class="hero-cta">
+    <a class="btn btn-primary" href="#investimento">Garantir minha vaga no Combo</a>
+    <a class="btn btn-ghost" href="medicina_trabalho.html" target="_blank">Abrir Medicina do Trabalho</a>
+    <a class="btn btn-ghost" href="Engenharia_trabalho.html" target="_blank">Abrir Engenharia do Trabalho</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- Por que este combo -->
+  <section class="block">
+    <h2>Por que este combo?</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>ROI com segurança e saúde</h3>
+        <p>Reduza sinistros, absenteísmo e custos ocultos criando valor por desfecho (produtividade + bem-estar).</p>
+      </article>
+      <article class="card">
+        <h3>Safety by Design</h3>
+        <p>Integre normas, engenharia e dados para <em>prevenção preditiva</em> — antes do acidente acontecer.</p>
+      </article>
+      <article class="card">
+        <h3>Dados → Decisão</h3>
+        <p>IA, visão computacional, sensoriamento e gêmeos digitais para gestão operacional em tempo real.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Público-alvo -->
+  <section class="block">
+    <h2>Público-Alvo</h2>
+    <ul class="clean">
+      <li>Empreendedores e inventores que atuam em indústrias, construção, logística e serviços.</li>
+      <li>Médicos do Trabalho, Engenheiros de Segurança, ergonomistas e gestores de HS&E/ESG.</li>
+      <li>Executivos de operações, facilities e RH interessados em <strong>novo modelo de prevenção e performance</strong>.</li>
+    </ul>
+  </section>
+
+  <!-- Metodologia -->
+  <section class="block">
+    <h2>Metodologia For Inventors</h2>
+    <ul class="clean">
+      <li><strong>Aprender criando:</strong> cada módulo gera ideias acionáveis e protótipos (MVP/POC).</li>
+      <li><strong>Transdisciplinar:</strong> integração prática de engenharia, computação, biotecnologia, direito e economia.</li>
+      <li><strong>Didática acessível:</strong> linguagem simples; não exige matemática avançada.</li>
+      <li><strong>Formato:</strong> 8 meses • 2–3 aulas/semana • gravadas + momentos ao vivo estratégicos.</li>
+    </ul>
+  </section>
+
+  <!-- Conteúdo transversal -->
+  <section class="block">
+    <h2>Conteúdo Programático Transversal (aplicado às 2 áreas)</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Engenharias & Computação</h3>
+        <ul class="clean">
+          <li>IA preditiva, Visão Computacional e Anomalia Detection.</li>
+          <li>Robótica, Automação & Controle; RPA de segurança e cobots.</li>
+          <li>IoT industrial, Edge/Cloud e Gêmeos Digitais de processos críticos.</li>
+          <li>Ciência dos Materiais para EPI/EPC (resistência, conforto térmico, superfícies antiaderência).</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Bio & Saúde Ocupacional</h3>
+        <ul class="clean">
+          <li>Fisiologia do trabalho e carga biomecânica (ergonomia baseada em evidências).</li>
+          <li>Biotecnologia aplicada à reabilitação e monitoramento (wearables, biomarcadores).</li>
+          <li>Tecnologias de Regeneração de Tecidos e recuperação acelerada.</li>
+          <li>Nanotecnologias & Microtecnologias para sensoriamento e proteção.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Negócio, Regulação & Valor</h3>
+        <ul class="clean">
+          <li>Economia das Doenças e precificação por valor (sinistro evitado, uptime, qualidade).</li>
+          <li>Neuroeconomia da adesão e desenho de incentivos.</li>
+          <li>Direito Anti-Contenda, LGPD e conformidade com NRs/NBRs.</li>
+          <li>Administração & Operações 5.0 (rotas, layout, rotinas e governança de campo).</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- Módulo avançado opcional -->
+  <section class="block">
+    <h2>Módulo Avançado (Opcional) — Operações 5.0 & Automação de Campo</h2>
+    <p>Para quem deseja levar a operação ao próximo nível com tecnologia aplicada e decisão em tempo real.</p>
+    <ul class="clean">
+      <li>Visão por IA para EPI correto, zonas de risco e near-miss.</li>
+      <li>Lockout/Tagout digital, rastreabilidade e permissões eletrônicas.</li>
+      <li>Exoesqueletos, exo-luvas e assistência robótica.</li>
+      <li>Sensores micro/nano e checklists inteligentes via voz.</li>
+      <li>Modelo econômico de prevenção: ROI, TIR e “valor por desfecho”.</li>
+    </ul>
+    <div class="hero-cta" style="margin-top:10px">
+      <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">📱 Incluir Módulo via WhatsApp</a>
+      <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">📧 Solicitar por E-mail</a>
+    </div>
+  </section>
+
+  <!-- Investimento -->
+  <section id="investimento" class="block">
+    <h2>Investimento</h2>
+    <div class="price">
+      <span>Combo Especial (2 cursos):</span>
+      <strong>R$ 12.997,00</strong>
+      <span class="note">Vagas limitadas • condições e parcelamento pelo WhatsApp.</span>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://wa.me/5591980144854" target="_blank">Quero este Combo</a>
+      <a class="btn btn-whats" href="https://wa.me/5591980144854" target="_blank">Conversar no WhatsApp</a>
+      <a class="btn btn-mail" href="mailto:drclaudiocutrim@gmail.com" target="_blank">Conversar por E-mail</a>
+    </div>
+    <p class="note" style="margin-top:10px">Curso livre com certificação. Possibilidade de participação societária em projetos originados no curso (<em>Seja Sócio</em>).</p>
+  </section>
+
+</main>
+
+<footer>© 2025 For Inventors. Todos os direitos reservados.</footer>
+</body>
+</html>

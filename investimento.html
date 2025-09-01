@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Investimento — For Inventors</title>
+<style>
+:root{
+  /* Paleta For Inventors (dark + dourado) */
+  --bg:#0b0b0e; --panel:#141418; --header:#101015;
+  --text:#f5f7fb; --muted:#9aa0ad;
+  --accent:#fcd14f;     /* gold */
+  --accent-2:#eab308;   /* amber */
+  --shadow:rgba(252,209,79,.16);
+  --ok:#22c55e; --info:#3b82f6; --whats:#25d366;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:"Segoe UI",Tahoma,Arial,Helvetica,sans-serif;
+  color:var(--text); background:
+    radial-gradient(1200px 800px at 90% -10%, rgba(234,179,8,.12), transparent 60%),
+    radial-gradient(800px 600px at -10% 20%, rgba(252,211,77,.10), transparent 60%),
+    var(--bg);
+  line-height:1.65;
+}
+header{
+  background:linear-gradient(180deg,var(--header) 0%, rgba(16,16,21,.92) 70%, transparent 100%);
+  padding:56px 18px 30px; text-align:center;
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+.badge{
+  display:inline-block; padding:6px 12px; border-radius:999px;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  color:#1a1300; font-weight:800; font-size:12px; letter-spacing:.4px;
+  box-shadow:0 10px 30px var(--shadow);
+}
+h1{margin:14px 0 8px; font-size:36px}
+.subtitle{max-width:900px; margin:8px auto 0; color:var(--muted); font-size:18px}
+
+.wrap{max-width:1150px; margin:28px auto 80px; padding:0 18px}
+
+.pricing{
+  display:grid; grid-template-columns:repeat(3,1fr); gap:18px; align-items:stretch;
+}
+.card{
+  background:var(--panel); border:1px solid rgba(255,255,255,.08); border-radius:16px;
+  padding:20px; position:relative; overflow:hidden; box-shadow:0 12px 32px var(--shadow);
+}
+.card.best{
+  border-color:rgba(252,209,79,.35);
+  box-shadow:0 16px 40px rgba(252,209,79,.25);
+}
+.ribbon{
+  position:absolute; top:14px; right:-36px; transform:rotate(30deg);
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  color:#1b1400; font-weight:900; font-size:12px; letter-spacing:.8px;
+  padding:6px 70px;
+}
+.card h3{margin:0 0 6px; font-size:22px; color:var(--accent)}
+.price{
+  font-size:34px; font-weight:900; margin:6px 0 2px; letter-spacing:.2px;
+}
+.per{color:var(--muted); font-size:13px}
+.save{
+  display:inline-block; margin-top:10px; font-weight:800; font-size:12px;
+  color:#0a1a0f; background:linear-gradient(90deg,#22c55e,#86efac);
+  padding:6px 10px; border-radius:999px;
+}
+ul.features{margin:14px 0 16px 18px}
+ul.features li{margin:6px 0}
+.ctas{display:flex; gap:10px; flex-wrap:wrap}
+.btn{
+  display:inline-block; text-decoration:none; font-weight:800; font-size:14px;
+  padding:12px 14px; border-radius:10px; border:1px solid rgba(255,255,255,.14);
+  background:rgba(255,255,255,.04); color:#fff; transition:.18s;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#1b1400; border-color:transparent}
+.btn-whats{background:var(--whats); color:#06140b; border-color:transparent}
+.btn-mail{background:var(--info); color:#071225; border-color:transparent}
+
+.notes{
+  margin-top:26px; background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08);
+  border-radius:14px; padding:18px;
+}
+.notes h4{margin:0 0 8px; color:var(--accent)}
+.notes ul{margin:0 0 0 18px}
+hr.sep{border:none; border-top:1px solid rgba(255,255,255,.08); margin:28px 0}
+
+.table{
+  width:100%; border-collapse:collapse; overflow:hidden; border-radius:12px;
+  border:1px solid rgba(255,255,255,.08);
+}
+.table th,.table td{
+  padding:12px 14px; text-align:left; border-bottom:1px solid rgba(255,255,255,.06);
+}
+.table th{background:rgba(255,255,255,.04); color:#ffeaa3}
+.table tr:hover td{background:rgba(255,255,255,.03)}
+
+footer{color:var(--muted); text-align:center; font-size:14px; padding:28px 0 40px}
+
+@media (max-width:900px){ .pricing{grid-template-columns:1fr} .ribbon{display:none} }
+@media (max-width:640px){ h1{font-size:28px} }
+</style>
+</head>
+<body>
+<header>
+  <span class="badge">FOR INVENTORS • INVESTIMENTO</span>
+  <h1>Investimento dos Cursos</h1>
+  <p class="subtitle">Valores para cursos individuais (8 meses) e combos — iguais para todas as trilhas For Inventors (Medicina, Engenharia, IA, Robótica, Biotecnologia, Agronomia, etc.).</p>
+</header>
+
+<main class="wrap">
+
+  <!-- Cards de Preço -->
+  <section class="pricing">
+    <!-- Curso Individual -->
+    <article class="card">
+      <h3>Curso Individual</h3>
+      <div class="price">R$ 9.997,00</div>
+      <div class="per">Duração: 8 meses • 2–3 aulas/semana • Acesso à incubadora <strong>Cerebral.top</strong></div>
+      <ul class="features">
+        <li>Metodologia For Inventors — simples, clara e orientada à criação</li>
+        <li>Foco em MVP/PoC e tese de negócio</li>
+        <li>Certificado (Curso Livre)</li>
+      </ul>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#matricula">Matricular</a>
+        <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+        <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+      </div>
+    </article>
+
+    <!-- Combo 1 -->
+    <article class="card">
+      <h3>Combo 1 — 2 Cursos</h3>
+      <div class="price">R$ 14.997,00</div>
+      <div class="per">Economize <strong>R$ 4.997,00</strong> vs. 2 individuais</div>
+      <span class="save">+ Valor para quem quer acelerar</span>
+      <ul class="features">
+        <li>Qualquer combinação de <em>duas</em> trilhas For Inventors</li>
+        <li>Integração entre áreas (ex.: IA + Robótica)</li>
+        <li>Mentorias coletivas de projeto</li>
+      </ul>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#matricula">Matricular</a>
+        <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+        <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+      </div>
+    </article>
+
+    <!-- Combo 2 -->
+    <article class="card best">
+      <div class="ribbon">MELHOR CUSTO-BENEFÍCIO</div>
+      <h3>Combo 2 — 3 Cursos</h3>
+      <div class="price">R$ 19.997,00</div>
+      <div class="per">Economize <strong>R$ 9.994,00</strong> vs. 3 individuais</div>
+      <span class="save">Para um portfólio completo (ex.: Mecânica + Materiais + IA)</span>
+      <ul class="features">
+        <li>Três trilhas For Inventors em paralelo ou sequência</li>
+        <li>Integração profunda entre disciplinas</li>
+        <li>Prioridade para <em>match</em> de sociedade em projetos</li>
+      </ul>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#matricula">Matricular</a>
+        <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+        <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- Observações e o que está incluso -->
+  <section class="notes">
+    <h4>O que está incluso</h4>
+    <ul>
+      <li>Acesso às aulas gravadas (8 meses) • 2–3 encontros semanais • possibilidade de aulas extras conforme evolução criativa da turma</li>
+      <li>Ambiente de incubação e networking via <strong><a href="https://cerebral.top" target="_blank" style="color:var(--accent)">Cerebral.top</a></strong></li>
+      <li>Discussão de projetos reais e possibilidade de <strong>sociedade</strong> em soluções nascidas no curso</li>
+      <li>Certificação (Curso Livre) • Metodologia acessível (sem exigência de matemática complexa)</li>
+    </ul>
+  </section>
+
+  <hr class="sep"/>
+
+  <!-- Comparativo -->
+  <section>
+    <h3 style="margin:0 0 10px; color:var(--accent)">Comparativo Rápido</h3>
+    <table class="table" aria-label="Tabela comparativa de planos">
+      <thead>
+        <tr>
+          <th>Plano</th>
+          <th>Valor</th>
+          <th> nº de cursos</th>
+          <th> Economia vs. Individual</th>
+          <th> Ideal para</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Curso Individual</td>
+          <td>R$ 9.997,00</td>
+          <td>1</td>
+          <td>—</td>
+          <td>Entrar em uma área com foco total</td>
+        </tr>
+        <tr>
+          <td>Combo 1</td>
+          <td>R$ 14.997,00</td>
+          <td>2</td>
+          <td>R$ 4.997,00</td>
+          <td>Cruzar duas disciplinas estratégicas</td>
+        </tr>
+        <tr>
+          <td>Combo 2</td>
+          <td>R$ 19.997,00</td>
+          <td>3</td>
+          <td>R$ 9.994,00</td>
+          <td>Construir portfólio completo e IP forte</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <hr class="sep"/>
+
+  <!-- FAQ enxuta -->
+  <section class="notes">
+    <h4>Perguntas rápidas</h4>
+    <ul>
+      <li><strong>Posso escolher qualquer trilha?</strong> Sim — as trilhas (ex.: IA, Robótica, Biotecnologia, Agronomia, Mecânica, Materiais, Computação, Medicina etc.) têm o mesmo investimento base.</li>
+      <li><strong>Há módulos complementares (ex.: cirúrgico)?</strong> Sim — adicionados sob demanda, com orçamento e cronograma próprios.</li>
+      <li><strong>Formas de pagamento?</strong> Informe sua preferência por WhatsApp ou E-mail para receber a proposta formal.</li>
+    </ul>
+    <div class="ctas" style="margin-top:10px">
+      <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">Falar no WhatsApp</a>
+      <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">Solicitar Proposta por E-mail</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2025 For Inventors. Todos os direitos reservados.</footer>
+</body>
+</html>

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Direito Civil For Inventors</title>
+  <style>
+    :root{
+      /* Paleta Direito Civil: navy profundo + esmeralda + azul */
+      --bg:#0a1116;          /* fundo */
+      --header:#0d1f24;      /* topo */
+      --panel:#0f1b22;       /* containers */
+      --card:#13242d;        /* cards */
+      --text:#e8f4ff;        /* texto principal */
+      --muted:#9fb6c8;       /* texto secundário */
+      --accent:#34d399;      /* esmeralda */
+      --accent-2:#60a5fa;    /* azul vivo */
+      --shadow: rgba(52,211,153,.18);
+      --whats:#25d366;
+      --mail:#3b82f6;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family:"Segoe UI", Tahoma, Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(1200px 800px at 90% -10%, rgba(96,165,250,.10), transparent 60%),
+        radial-gradient(900px 700px at -10% 25%, rgba(52,211,153,.10), transparent 60%),
+        var(--bg);
+      color:var(--text); line-height:1.7;
+    }
+    header{
+      background:linear-gradient(180deg,var(--header) 0%, rgba(13,31,36,.92) 65%, transparent 100%);
+      padding:56px 18px 28px; text-align:center;
+    }
+    .badge{
+      display:inline-block; padding:6px 12px; border-radius:999px;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:#071217; font-weight:800; font-size:12px; letter-spacing:.45px;
+      box-shadow:0 10px 30px var(--shadow);
+    }
+    h1{margin:16px auto 8px; max-width:1050px; font-size:36px; line-height:1.15}
+    .subtitle{color:var(--muted); max-width:980px; margin:8px auto 0; font-size:18px}
+
+    .wrap{max-width:1000px; margin:26px auto 64px; padding:0 18px}
+    .block{
+      background:var(--panel); border:1px solid rgba(255,255,255,.08);
+      border-radius:14px; padding:24px 22px; margin:16px 0;
+      box-shadow:0 16px 38px var(--shadow);
+    }
+    .block h2{margin:0 0 12px; font-size:26px; color:var(--accent)}
+    p{margin:10px 0; color:var(--text)}
+    ul{margin:10px 0 0 20px; padding:0}
+    li{margin:8px 0}
+
+    .ribbon{ text-align:center; margin:14px 0 4px}
+    .ribbon span{
+      display:inline-block; padding:10px 18px; border-radius:999px;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2));
+      color:#071217; font-weight:800; box-shadow:0 12px 28px var(--shadow);
+    }
+
+    .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:14px}
+    @media (max-width:1000px){ .grid{grid-template-columns:repeat(2,1fr)} }
+    @media (max-width:640px){ .grid{grid-template-columns:1fr} h1{font-size:28px} }
+
+    .card{
+      background:var(--card); border:1px solid rgba(255,255,255,.08);
+      border-radius:12px; padding:16px; position:relative; overflow:hidden;
+    }
+    .card::after{
+      content:""; position:absolute; inset:auto -40px 0 -40px; height:4px;
+      background:linear-gradient(90deg,var(--accent),var(--accent-2)); opacity:.35;
+    }
+    .card h3{margin:0 0 8px; font-size:18px}
+    .card p{margin:0; color:#dfe9f5}
+
+    .actions{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+    .btn{
+      display:inline-block; text-decoration:none; font-weight:800; font-size:14px;
+      padding:12px 16px; border-radius:10px; border:1px solid transparent; transition:.18s
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#071217}
+    .btn-ghost{background:rgba(255,255,255,.06); border-color:rgba(255,255,255,.16); color:var(--text)}
+    .btn-whats{background:var(--whats); color:#071a10}
+    .btn-mail{background:var(--mail); color:#071629}
+
+    .note{color:var(--muted); font-size:14px}
+    footer{text-align:center; color:var(--muted); font-size:14px; padding:28px 0 40px}
+  </style>
+</head>
+<body>
+
+<header>
+  <span class="badge">FOR INVENTORS • Direito Civil</span>
+  <h1>Direito Civil For Inventors</h1>
+  <p class="subtitle">Contratos, plataformas, prova digital e resolução de conflitos — com IA, Web3 e economia comportamental para criar negócios jurídicos de alto impacto.</p>
+</header>
+
+<main class="wrap">
+
+  <!-- O que é -->
+  <section class="block">
+    <h2>O que é o For Inventors?</h2>
+    <p>
+      O <strong>For Inventors</strong> é um estúdio-aprendizagem para transformar <em>invenções</em> em
+      <strong>inovações de mercado</strong>. No eixo civil, você integra Direito, IA, blockchain, ciência de dados,
+      neuroeconomia e design de serviços para criar soluções preventivas, escaláveis e centradas em valor.
+    </p>
+    <div class="ribbon"><span>🧠 Curso Inédito — Formação Transdisciplinar de Alto Impacto</span></div>
+  </section>
+
+  <!-- Por que único -->
+  <section class="block">
+    <h2>Por que este curso é único?</h2>
+    <ul>
+      <li><strong>Sem silos:</strong> Direito Civil conectado a computação, dados, neuroeconomia e Web3.</li>
+      <li><strong>Construção de produto:</strong> você sai com protótipos (contratos inteligentes, fluxos ODR, APIs e legal-designs operáveis).</li>
+      <li><strong>Anti-Contenda:</strong> foco em prevenção, linguagem clara e plataformas de acordo com governança ética.</li>
+      <li><strong>Incubação real:</strong> projetos evoluem na <a href="https://cerebral.top" target="_blank" style="color:var(--accent-2)">Cerebral.top</a>, com chance de <em>Seja Sócio</em>.</li>
+    </ul>
+  </section>
+
+  <!-- Público-alvo -->
+  <section class="block">
+    <h2>Público-Alvo</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Jurídico & Negócios</h3>
+        <p>Advogados, gestores jurídicos e empreendedores que buscam modelos civis escaláveis.</p>
+      </article>
+      <article class="card">
+        <h3>Tech & Dados</h3>
+        <p>Profissionais de computação, IA e produto interessados em legal tech e prova digital.</p>
+      </article>
+      <article class="card">
+        <h3>Gestão Pública & Privada</h3>
+        <p>Executivos, notariais, registradores e builders de plataformas de confiança.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Como funciona -->
+  <section class="block">
+    <h2>Como funciona</h2>
+    <ul>
+      <li><strong>Duração:</strong> 8 meses • 2 a 3 aulas/semana • 100% online (gravadas e sob demanda).</li>
+      <li><strong>Dinâmica:</strong> desafios criativos, casos reais e missões de validação com usuários.</li>
+      <li><strong>Fecho:</strong> apresentação de MVP/PoC e possibilidade de sociedade em projetos do curso.</li>
+    </ul>
+    <div class="actions">
+      <a class="btn btn-primary" href="#investimento">💰 Ver Investimento</a>
+      <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">📱 Conversar no WhatsApp</a>
+      <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">📧 Conversar por E-mail</a>
+    </div>
+  </section>
+
+  <!-- Metodologia -->
+  <section class="block">
+    <h2>Metodologia do Curso</h2>
+    <ul>
+      <li><strong>Aprender criando:</strong> cada módulo entrega um artefato prático (contrato-modelo, fluxo ODR, API, guideline LGPD, canvas de produto).</li>
+      <li><strong>Integração prática:</strong> Direito + IA + Web3 + neuroeconomia aplicados a consumo, contratos, responsabilidade civil, família e sucessões digitais.</li>
+      <li><strong>Casos de alto impacto:</strong> prova digital, plataformas de confiança, prevenção de litígio e serviços autônomos.</li>
+      <li><strong>Incubadora online:</strong> colaboração e pitch na <a href="https://cerebral.top" target="_blank" style="color:var(--accent-2)">Cerebral.top</a>.</li>
+    </ul>
+  </section>
+<section class="block">
+  <h2>Interligações: Direito Civil ↔ Trilhas Tecnológicas (ênfase na pesquisa do Prof. Dr. Claudio Cutrim)</h2>
+  <p class="note" style="margin-top:-4px">
+    Integrações alinhadas à Medicina & Saúde, Engenharia Mecânica, Ciência dos Materiais, IA & Computação,
+    Micro/Nanotecnologias, Neuroeconomia & Neurodireito, Ciência Ambiental e à Teoria do <strong>Estado Online</strong>.
+  </p>
+
+  <div class="grid">
+
+    <!-- Contratos & Negócios -->
+    <article class="card">
+      <h3>Contratos &amp; Modelagem de Negócios</h3>
+      <ul>
+        <li><strong>Smart contracts</strong> com <em>pecúnia pactuada</em>, escrows e cláusulas de performance (KPIs/SLAs).</li>
+        <li><strong>Anti-assimetria</strong> de informação: painéis de transparência, reputação e verificação de partes.</li>
+        <li>Marketplaces com garantias técnicas (materiais/robótica/IA) e compliance <em>by design</em>.</li>
+      </ul>
+    </article>
+
+    <!-- Propriedade & Bens -->
+    <article class="card">
+      <h3>Propriedade &amp; Bens (físicos e digitais)</h3>
+      <ul>
+        <li>Tokenização/registro de bens, <strong>cadastros imutáveis</strong> e guarda probatória.</li>
+        <li>Smart escrow para compra e locação com verificação técnica de estado/conformidade.</li>
+        <li>Gestão de ativos com IoT, telemetria e manutenção preditiva contratualizada.</li>
+      </ul>
+    </article>
+
+    <!-- Responsabilidade Civil -->
+    <article class="card">
+      <h3>Responsabilidade Civil &amp; Segurança de Produto</h3>
+      <ul>
+        <li><strong>Explainable AI</strong> para nexo causal, risco e proporcionalidade de reparação.</li>
+        <li>Lacres/tampers, sensores e <strong>materiais inteligentes</strong> para cadeia de custódia de evidências.</li>
+        <li>Seguro paramétrico e cálculo de dano com telemetria/robótica.</li>
+      </ul>
+    </article>
+
+    <!-- Consumidor & Saúde -->
+    <article class="card">
+      <h3>Consumidor &amp; Saúde</h3>
+      <ul>
+        <li>Rastreabilidade <strong>anticounterfeit</strong> (fármacos/insumos) e cadeia fria monitorada.</li>
+        <li>Recall assistido por IA (Economia das Doenças, análise risco-benefício) e ODR civil.</li>
+        <li>Consentimento informado digital com salvaguardas de <strong>Neurodireito</strong> &amp; LGPD.</li>
+      </ul>
+    </article>
+
+    <!-- Família & Sucessões -->
+    <article class="card">
+      <h3>Família &amp; Sucessões</h3>
+      <ul>
+        <li>Cofre digital, <strong>testamento smart</strong> com múltiplas chaves e trilhas de decisão auditáveis.</li>
+        <li>Plataformas de mediação familiar (<em>apaziguamento</em>) com retratação pactuada quando cabível.</li>
+        <li>Proteção de dados sensíveis e curadoria de evidências (neuro/psico).</li>
+      </ul>
+    </article>
+
+    <!-- Imobiliário & Habitação 5.0 -->
+    <article class="card">
+      <h3>Imobiliário &amp; Habitação 5.0</h3>
+      <ul>
+        <li>BIM + IoT para contratos de performance (energia, água, qualidade do ar, acessibilidade).</li>
+        <li>Vistorias robóticas e <strong>materiais inteligentes</strong> para vícios ocultos e garantias.</li>
+        <li>Condomínio-plataforma: governança e compliance com módulos do <strong>Estado Online</strong>.</li>
+      </ul>
+    </article>
+
+    <!-- Agronegócio -->
+    <article class="card">
+      <h3>Agronegócio &amp; Cadeias Produtivas</h3>
+      <ul>
+        <li>Tokenização de safras/estoques, compliance ambiental e fitossanitário com IoT.</li>
+        <li>Contratos paramétricos (clima/solo) e logística rastreável.</li>
+        <li>Micro/nano para detecção de resíduos, qualidade e autenticidade.</li>
+      </ul>
+    </article>
+
+    <!-- Ambiental -->
+    <article class="card">
+      <h3>Ambiental &amp; Clima</h3>
+      <ul>
+        <li>Satélites, drones e sensores para <strong>prova civil ambiental</strong> e cálculo de dano.</li>
+        <li>Tokenização de cadeias limpas e sanções proporcionais com verificação técnica.</li>
+        <li>Planos de remediação com métricas e auditoria contínua.</li>
+      </ul>
+    </article>
+
+    <!-- Prova Civil & ODR -->
+    <article class="card">
+      <h3>Prova Civil Digital &amp; ODR</h3>
+      <ul>
+        <li>Logs selados, <em>timestamping</em>, OSINT e grafos de relação.</li>
+        <li>ODR com <strong>apaziguamento</strong>, acordos e <em>pecúnia pactuada</em> (cripto/fiat).</li>
+        <li>Explainable AI, revisão humana e LGPD em todo o fluxo.</li>
+      </ul>
+    </article>
+
+    <!-- Plataformas & Estado Online -->
+    <article class="card">
+      <h3>Plataformas &amp; Estado Online</h3>
+      <ul>
+        <li><strong>Consenso aplicativo</strong> para assembleias, contratos e governança.</li>
+        <li>Anti-contenda e anti-assimetria como arquitetura de plataforma (nunca só procedimento).</li>
+        <li>Economia/Neuroeconomia aplicadas a adesão, cooperação e compliance.</li>
+      </ul>
+    </article>
+
+  </div>
+
+  <p class="note" style="margin-top:10px">
+    Todas as trilhas observam <strong>devido processo</strong>, <strong>proporcionalidade</strong>, <strong>LGPD</strong> e
+    <em>explainable AI</em>, com auditoria e revisão humana. Linguagem acessível e foco em <strong>modelo de negócio</strong> e
+    <strong>impacto civilizacional</strong>.
+  </p>
+</section>
+
+  <!-- Conteúdo programático -->
+  <section class="block">
+     
+  <h2>Conteúdo Programático (Direito Civil For Inventors)</h2>
+  <ul>
+    <li>• <strong>Direito Anti-Contenda</strong> &amp; <strong>Anti-Assimetria</strong> — desenho de incentivos, prevenção de litígios e acordos eficientes.</li>
+    <li>• <strong>Contratos Inteligentes</strong> — <em>pecúnia pactuada</em>, escrows, cláusulas de performance, reputação e provas técnicas.</li>
+    <li>• <strong>Prova Civil Digital</strong> — cadeia de custódia, logs selados, OSINT, grafos e <em>explainable AI</em> para causalidade.</li>
+    <li>• <strong>Neuroeconomia &amp; Direito Comportamental</strong> — adesão, risco, nudges e arquitetura de escolhas em relações civis.</li>
+    <li>• <strong>Plataformas &amp; Estado Online</strong> — consenso aplicativo, governança de assembleias e jurisdição de plataforma.</li>
+    <li>• <strong>Responsabilidade Civil &amp; Produto</strong> — engenharia de risco, materiais inteligentes, robótica/IoT e seguro paramétrico.</li>
+    <li>• <strong>Propriedade, Posse &amp; Bens Digitais</strong> — tokenização, registros imutáveis e gestão técnica de ativos.</li>
+    <li>• <strong>Consumidor &amp; Saúde</strong> — rastreabilidade anticounterfeit, recall por IA e consentimento informado digital (LGPD/Neurodireito).</li>
+    <li>• <strong>Família &amp; Sucessões</strong> — cofre digital, testamento smart, mediação/apaziguamento e proteção de dados sensíveis.</li>
+    <li>• <strong>Imobiliário &amp; Habitação 5.0</strong> — contratos por performance (energia/água/QA), vistorias robóticas e vícios.</li>
+    <li>• <strong>Agronegócio</strong> — contratos paramétricos, compliance ambiental, IoT de cadeia e qualidade micro/nano.</li>
+    <li>• <strong>Ambiental &amp; Clima</strong> — perícia técnica (satélites/drones/sensores) e cálculo de dano/remediação.</li>
+    <li>• <strong>ODR Civil</strong> — mediação online, retratação pactuada, reparação e execução supervisionada.</li>
+    <li>• <strong>Modelagem de Negócios Jurídicos</strong> — produtos/serviços B2B/B2G, captação, parcerias e estratégia de IP.</li>
+  <li>• <strong>Teoria do Estado Online Aplicado ao Direito Civil</strong></li>
+ </ul>
+</section>
+  
+
+  <!-- Módulo prático opcional -->
+  <section class="block">
+    <h2>Módulo Prático Complementar — ODR Civil & Contratos Inteligentes</h2>
+    <p>Trilha aplicada para aumentar acordos, reduzir litígio e automatizar relações civis com segurança e clareza.</p>
+    <ul>
+      <li><strong>Legal Design & Linguagem Clara:</strong> microcontratos, termos de uso e políticas “human readable”.</li>
+      <li><strong>Computação & IA:</strong> triagem, priorização de casos, explicabilidade e workflows de mediação.</li>
+      <li><strong>Blockchain:</strong> cadeias de custódia, contratos autoexecutáveis e auditoria.</li>
+      <li><strong>LGPD:</strong> consentimento granular, anonimização e privacy by design.</li>
+      <li><strong>Modelo de negócio:</strong> plataforma civil de confiança com monetização B2B/B2C/B2G.</li>
+    </ul>
+    <div class="actions">
+      <a class="btn btn-ghost" href="#contato-modulo">Solicitar inclusão do módulo</a>
+      <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">📱 WhatsApp — Incluir Módulo</a>
+      <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">📧 E-mail — Incluir Módulo</a>
+    </div>
+  </section>
+
+  <!-- Certificação & investimento -->
+  <section id="investimento" class="block">
+    <h2>Certificação, Impacto Econômico e Caminhos de Sociedade</h2>
+    <p>
+      <strong>Curso Livre com Certificação.</strong> Você cria <strong>produtos, plataformas e legal techs</strong> civis.
+      Ao final, pode <strong>escalar sua própria empresa</strong> ou tornar-se <strong>sócio</strong> de projetos incubados.
+    </p>
+    <ul>
+      <li><strong>Sócio Técnico</strong> — desenvolvimento e integrações (IA, Web3, APIs).</li>
+      <li><strong>Sócio Inventor</strong> — propriedade intelectual (métodos, fluxos, interfaces).</li>
+      <li><strong>Sócio Operacional</strong> — operação e expansão da plataforma.</li>
+      <li><strong>Sócio Comercial</strong> — canais B2B/B2G, parcerias e vendas.</li>
+      <li><strong>Consultor/Franqueado</strong> — replicação regional.</li>
+    </ul>
+    <div class="actions">
+      <a class="btn btn-primary" href="for-inventors-investimento.html">Abrir página de Investimento</a>
+      <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">📱 Falar no WhatsApp</a>
+      <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">📧 Falar por E-mail</a>
+    </div>
+    <p class="note" style="margin-top:10px">Projetos podem evoluir pela <em>Cerebral.top</em> — nossa incubadora online.</p>
+  </section>
+
+</main>
+
+<footer>© 2025 For Inventors. Todos os direitos reservados.</footer>
+</body>
+</html>

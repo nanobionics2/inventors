@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Combo Especial — Ortopedia + Medicina do Esporte + Reumatologia | For Inventors</title>
+<style>
+  :root{
+    /* Paleta exclusiva do COMBO: dark navy + magenta + dourado */
+    --bg:#0b0f1a;          /* fundo */
+    --hero:#0f1526;        /* topo/hero */
+    --panel:#131a2a;       /* containers */
+    --card:#161f34;        /* cards */
+    --text:#eef3ff;        /* texto principal */
+    --muted:#a9b7d1;       /* texto secundário */
+    --gold:#fcd14f;        /* dourado (brand) */
+    --magenta:#d946ef;     /* magenta vivo */
+    --cyan:#22d3ee;        /* ciano detalhe */
+    --ok:#25d366;          /* WhatsApp */
+    --mail:#3b82f6;        /* e-mail */
+    --shadow: 0 18px 40px rgba(217,70,239,.12);
+  }
+
+  *{box-sizing:border-box}
+  body{
+    margin:0; font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+    background:
+      radial-gradient(1200px 700px at 110% -10%, rgba(217,70,239,.10), transparent 60%),
+      radial-gradient(900px 600px at -10% 20%, rgba(34,211,238,.10), transparent 60%),
+      var(--bg);
+    color:var(--text); line-height:1.65;
+  }
+
+  header{
+    background:linear-gradient(180deg, var(--hero) 0%, rgba(15,21,38,.92) 70%, transparent 100%);
+    text-align:center; padding:56px 18px 28px;
+  }
+  .badge{
+    display:inline-block; padding:6px 12px; border-radius:999px;
+    background:linear-gradient(90deg, var(--gold), var(--magenta));
+    color:#0b0f1a; font-weight:800; font-size:12px; letter-spacing:.4px;
+    box-shadow:0 10px 30px rgba(252,209,79,.18);
+  }
+  h1{margin:16px auto 10px; max-width:980px; font-size:34px; line-height:1.15}
+  .subtitle{color:var(--muted); max-width:900px; margin:8px auto 0; font-size:18px}
+
+  .wrap{max-width:1100px; margin:28px auto 70px; padding:0 18px}
+
+  .hero-cta{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:16px}
+  .btn{display:inline-block; text-decoration:none; font-weight:800; font-size:14px; padding:12px 16px; border-radius:12px; border:1px solid transparent; transition:.18s}
+  .btn:hover{transform:translateY(-1px)}
+  .btn-primary{background:linear-gradient(90deg,var(--gold),var(--magenta)); color:#0b0f1a}
+  .btn-ghost{background:rgba(255,255,255,.06); color:var(--text); border-color:rgba(255,255,255,.12)}
+  .btn-whats{background:var(--ok); color:#061b10}
+  .btn-mail{background:var(--mail); color:#081523}
+
+  section.block{
+    background:var(--panel); border:1px solid rgba(255,255,255,.08);
+    border-radius:16px; padding:24px; margin:18px 0; box-shadow: var(--shadow);
+  }
+  section.block h2{margin:0 0 12px; font-size:24px; color:var(--gold)}
+  section.block p{margin:0 0 10px; color:#e9eeff}
+
+  .grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px}
+  @media (max-width:1000px){ .grid{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:640px){ .grid{grid-template-columns:1fr} h1{font-size:28px} }
+
+  .card{
+    background:var(--card); border:1px solid rgba(255,255,255,.08);
+    border-radius:14px; padding:16px; display:flex; flex-direction:column; gap:10px; position:relative; overflow:hidden;
+  }
+  .card::after{
+    content:""; position:absolute; inset:auto -40px 0 -40px; height:4px;
+    background:linear-gradient(90deg, var(--gold), var(--magenta), var(--cyan)); opacity:.4;
+  }
+  .card h3{margin:0; font-size:18px}
+  .card p{margin:0; color:#dfe6ff}
+
+  ul.clean{margin:8px 0 0 18px; padding:0}
+  ul.clean li{margin:6px 0}
+
+  .price{
+    display:flex; align-items:baseline; gap:12px; flex-wrap:wrap;
+    background:linear-gradient(90deg, rgba(252,209,79,.08), rgba(217,70,239,.08));
+    border:1px dashed rgba(255,255,255,.14); padding:18px; border-radius:12px; margin:12px 0 6px;
+  }
+  .price strong{font-size:28px; color:var(--gold)}
+  .note{color:var(--muted); font-size:14px}
+
+  .divider{height:1px; background:linear-gradient(90deg, transparent, rgba(255,255,255,.18), transparent); margin:18px 0}
+  footer{text-align:center; color:var(--muted); font-size:14px; padding:28px 0 40px}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="badge">COMBO ESPECIAL • FOR INVENTORS</span>
+  <h1>Ortopedia + Medicina do Esporte + Reumatologia</h1>
+  <p class="subtitle">Três áreas que se complementam no aparelho locomotor — para criar soluções, produtos e negócios de alto impacto.</p>
+
+  <div class="hero-cta">
+    <a class="btn btn-primary" href="#investimento">Garantir minha vaga no Combo</a>
+    <a class="btn btn-ghost" href="ortopedia.html" target="_blank">Abrir Ortopedia</a>
+    <a class="btn btn-ghost" href="medicina_esportiva.html" target="_blank">Abrir Medicina do Esporte</a>
+    <a class="btn btn-ghost" href="reumatologia.html" target="_blank">Abrir Reumatologia</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- Por que este combo -->
+  <section class="block">
+    <h2>Por que este combo?</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Sinergia Clínica & Tecnológica</h3>
+        <p>Musculoesquelético completo: diagnóstico, prevenção e performance com IA, materiais, robótica e biomecânica.</p>
+      </article>
+      <article class="card">
+        <h3>Da invenção ao negócio</h3>
+        <p>Você projeta soluções reais: dispositivos, softwares, serviços e modelos de cuidado escaláveis — prontos para MVP/POC.</p>
+      </article>
+      <article class="card">
+        <h3>Ecossistema For Inventors</h3>
+        <p>Incubação pela <a href="https://cerebral.top" target="_blank" style="color:var(--gold);text-decoration:none;">Cerebral.top</a>, possibilidade de participação societária (<em>Seja Sócio</em>) e networking qualificado.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Público-alvo -->
+  <section class="block">
+    <h2>Público-Alvo</h2>
+    <ul class="clean">
+      <li>Inventores, médicos, engenheiros, fisioterapeutas e profissionais do esporte.</li>
+      <li>Empreendedores que buscam criar <strong>novos modelos de negócio</strong> em saúde e performance.</li>
+      <li>Quem deseja dominar tecnologias aplicadas ao aparelho locomotor sem jargão acadêmico.</li>
+    </ul>
+  </section>
+
+  <!-- Metodologia -->
+  <section class="block">
+    <h2>Metodologia For Inventors</h2>
+    <ul class="clean">
+      <li><strong>Aprender criando:</strong> cada módulo gera ideias acionáveis e protótipos.</li>
+      <li><strong>Transdisciplinar:</strong> integração prática de engenharia, computação, biotecnologia, direito e economia.</li>
+      <li><strong>Didática acessível:</strong> linguagem simples; não exige matemática avançada.</li>
+      <li><strong>Formato:</strong> 8 meses • 2–3 aulas/semana • gravadas + momentos ao vivo estratégicos.</li>
+    </ul>
+  </section>
+
+  <!-- Conteúdo transversal -->
+  <section class="block">
+    <h2>Conteúdo Programático Transversal (aplicado às 3 áreas)</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Engenharias & Computação</h3>
+        <ul class="clean">
+          <li>Engenharia Mecânica aplicada (biomecânica, modelagem funcional).</li>
+          <li>Ciência dos Materiais (biomateriais, superfícies, wear & fatigue).</li>
+          <li>Robótica, Automação & Controle (assistência, reabilitação, teleoperação).</li>
+          <li>IA & Visão Computacional (triagem, prognóstico, personalização).</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Bio & Saúde</h3>
+        <ul class="clean">
+          <li>Biotecnologia; Engenharia de Tecidos; Drug Delivery local.</li>
+          <li>Nanotecnologias & Microtecnologias aplicadas a dispositivos.</li>
+          <li>Tecnologias de Regeneração de Tecidos e reparo.</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>Negócio & Regulação</h3>
+        <ul class="clean">
+          <li>Economia das Doenças e precificação por valor.</li>
+          <li>Neuroeconomia & adesão terapêutica.</li>
+          <li>Direito Anti-Contenda & LGPD aplicada.</li>
+          <li>Administração de operações (modelos domiciliares e escaláveis).</li>
+        </ul>
+      </article>
+    </div>
+    <div class="divider"></div>
+    <p class="note">Aplicações específicas por curso aparecem nas páginas individuais de <a href="ortopedia.html" style="color:var(--gold);text-decoration:none;">Ortopedia</a>, <a href="medicina_esportiva.html" style="color:var(--gold);text-decoration:none;">Medicina do Esporte</a> e <a href="reumatologia.html" style="color:var(--gold);text-decoration:none;">Reumatologia</a>.</p>
+  </section>
+
+  <!-- Módulo cirúrgico opcional -->
+  <section class="block">
+    <h2>Módulo Cirúrgico Complementar (Opcional)</h2>
+    <p>Trilha aplicada à <strong>Ortopedia Cirúrgica</strong> e a procedimentos guiados em <strong>Medicina do Esporte</strong> e <strong>Reumatologia</strong> para ampliar precisão e valor clínico com tecnologia acessível.</p>
+    <ul class="clean">
+      <li>Robótica, Automação & Controle: navegação, guias e assistência.</li>
+      <li>IA & Planejamento: detecção de margens/lesões, decisão explicável, “board” digital.</li>
+      <li>Materiais & Implantes: superfícies antiaderência/antibiofilme, design funcional.</li>
+      <li>Engenharia de Tecidos & Regeneração: enxertos, scaffolds, integração.</li>
+      <li>Micro & Nanotecnologias: drug delivery local e sensores implantáveis.</li>
+      <li>Economia das Doenças: custo-efetividade e retorno por desfecho.</li>
+    </ul>
+    <div class="hero-cta" style="margin-top:10px">
+      <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">📱 Incluir Módulo via WhatsApp</a>
+      <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">📧 Solicitar por E-mail</a>
+    </div>
+  </section>
+
+  <!-- Investimento -->
+  <section id="investimento" class="block">
+    <h2>Investimento</h2>
+    <div class="price">
+      <span>Combo Especial (3 cursos):</span>
+      <strong>R$ 12.997,00</strong>
+      <span class="note">Vagas limitadas • condições e parcelamento pelo WhatsApp.</span>
+    </div>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="https://wa.me/5591980144854" target="_blank">Quero este Combo</a>
+      <a class="btn btn-whats" href="https://wa.me/5591980144854" target="_blank">Conversar no WhatsApp</a>
+      <a class="btn btn-mail" href="mailto:drclaudiocutrim@gmail.com" target="_blank">Conversar por E-mail</a>
+    </div>
+    <p class="note" style="margin-top:10px">Curso livre com certificação. Possibilidade de participação societária em projetos originados no curso (<em>Seja Sócio</em>).</p>
+  </section>
+
+</main>
+
+<footer>© 2025 For Inventors. Todos os direitos reservados.</footer>
+</body>
+</html>

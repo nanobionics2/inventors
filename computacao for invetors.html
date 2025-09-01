@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Ciência da Computação For Inventors</title>
+<style>
+:root{
+  /* Paleta Computação: teal + amber */
+  --bg:#0a0f0f; --panel:#0f1616; --header:#0c1c1c;
+  --text:#e9fffd; --muted:#97c3bb;
+  --accent:#14b8a6;      /* teal */
+  --accent-2:#f59e0b;    /* amber */
+  --shadow:rgba(20,184,166,.16);
+  --whats:#25d366; --mail:#3b82f6;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:"Segoe UI",Tahoma,Arial,Helvetica,sans-serif;
+  background:
+    radial-gradient(900px 640px at 90% -10%, rgba(20,184,166,.10), transparent 60%),
+    radial-gradient(700px 520px at -10% 25%, rgba(245,158,11,.10), transparent 60%),
+    var(--bg);
+  color:var(--text); line-height:1.65;
+}
+header{
+  background:linear-gradient(180deg,var(--header) 0%, rgba(12,28,28,.92) 65%, transparent 100%);
+  padding:56px 18px 28px; text-align:center;
+}
+.badge{
+  display:inline-block; padding:6px 12px; border-radius:999px;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  color:#071412; font-weight:800; font-size:12px; letter-spacing:.4px;
+  box-shadow:0 10px 30px var(--shadow);
+}
+h1{margin:16px auto 8px; max-width:1050px; font-size:36px; line-height:1.15}
+.subtitle{color:var(--muted); max-width:960px; margin:8px auto 0; font-size:18px}
+
+.wrap{max-width:1100px; margin:26px auto 72px; padding:0 18px}
+.section{
+  background:var(--panel); border:1px solid rgba(255,255,255,.08);
+  border-radius:14px; padding:24px; margin:18px 0;
+  box-shadow:0 10px 30px var(--shadow);
+}
+.section h2{margin:0 0 12px; font-size:24px; color:var(--accent)}
+.section p{margin:0 0 12px; color:#eafffb}
+ul{margin:0 0 12px 18px}
+.manifesto{
+  background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08);
+  border-radius:12px; padding:14px; margin-top:10px; color:#d9fff7;
+}
+.kicker{
+  display:inline-block; background:rgba(20,184,166,.10); border:1px solid rgba(20,184,166,.35);
+  color:var(--accent); font-weight:700; padding:6px 10px; border-radius:999px; font-size:12px;
+}
+
+.ctas{display:flex; flex-wrap:wrap; gap:10px; margin-top:14px}
+.btn{
+  display:inline-block; text-decoration:none; font-weight:800; font-size:14px;
+  padding:12px 16px; border-radius:10px; border:1px solid transparent; transition:.2s
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#081412}
+.btn-ghost{background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.16); color:#e9fffd}
+.btn-whats{background:var(--whats); color:#08170f}
+.btn-mail{background:var(--mail); color:#071225}
+
+footer{color:var(--muted); text-align:center; font-size:14px; padding:28px 0 40px}
+
+@media (max-width:640px){
+  h1{font-size:28px}
+  .wrap{margin:16px auto 48px}
+}
+</style>
+</head>
+<body>
+<header>
+  <span class="badge">FOR INVENTORS • Ciência da Computação</span>
+  <h1>Ciência da Computação For Inventors</h1>
+  <p class="subtitle">Arquitetura, dados, segurança e produto — o essencial para tirar ideias do papel com qualidade de engenharia.</p>
+</header>
+
+<main class="wrap">
+
+  <!-- O que é -->
+  <section class="section">
+    <span class="kicker">Conceito For Inventors</span>
+    <h2>O que é o For Inventors?</h2>
+    <p>Mais do que um curso, um campo de experimentação estratégica para converter <strong>invenções em inovações de mercado</strong>. Linguagem acessível, zero excesso de jargão e foco absoluto em criação de valor.</p>
+    <div class="manifesto">
+      <strong>Visão:</strong> substituir sistemas legados por plataformas e produtos digitais de alto impacto — escaláveis, seguras, observáveis e realmente úteis ao usuário.
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="section">
+    <h2>Por que este curso é único?</h2>
+    <ul>
+      <li><strong>Formação sem silos:</strong> computação integrada com IA, engenharia, design, direito e negócios.</li>
+      <li><strong>Criação real:</strong> você pode sair com <em>MVP/PoC</em>, tese de IP e modelo de negócio validado.</li>
+      <li><strong>Ecossistema:</strong> incubação e parceria via <a href="https://cerebral.top" target="_blank" class="btn-ghost" style="padding:2px 8px;border-radius:8px">Cerebral.top</a>.</li>
+      <li><strong>Para executivos e inventores:</strong> disrupção tecnológica + ruptura de modelo de negócio.</li>
+    </ul>
+  </section>
+
+  <!-- Público e Funcionamento -->
+  <section class="section">
+    <h2>Público-Alvo</h2>
+    <ul>
+      <li>Inventores e criadores autodidatas com ambição de mercado.</li>
+      <li>Profissionais de saúde, engenharia, ciência e direito que precisam do “núcleo duro” da computação para empreender.</li>
+      <li>Empreendedores e executivos que buscam novos paradigmas digitais.</li>
+    </ul>
+
+    <h2>Como funciona</h2>
+    <ul>
+      <li><strong>Duração:</strong> 8 meses • <strong>Formato:</strong> aulas gravadas + desafios práticos.</li>
+      <li><strong>Frequência:</strong> 2–3 encontros/semana; o professor pode incluir aulas extras conforme a evolução criativa.</li>
+      <li><strong>Encerramento:</strong> discussão de projetos reais e possibilidade de <em>sociedade</em>.</li>
+    </ul>
+
+    <div class="ctas">
+      <a class="btn btn-primary" href="#investimento">💰 Ver Investimento</a>
+      <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">📱 Conversar no WhatsApp</a>
+      <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">📧 Conversar por E-mail</a>
+    </div>
+  </section>
+
+  <!-- Metodologia / Didática -->
+  <section class="section">
+    <h2>Metodologia do Curso</h2>
+    <ul>
+      <li><strong>Aprendizado orientado à criação:</strong> cada módulo gera ideias aplicáveis, <em>MVP/PoC</em> e tese de negócio.</li>
+      <li><strong>Integração prática de saberes:</strong> desafios, simulações e missões empreendedoras com requisitos reais.</li>
+      <li><strong>Estudos de caso de alto impacto:</strong> segurança, custo, confiabilidade e observabilidade.</li>
+      <li><strong>Incubadora Online:</strong> acesso à <a href="https://cerebral.top" target="_blank" style="color:var(--accent)">Cerebral.top</a> para cocriação e parcerias.</li>
+      <li><strong>Protagonismo inventivo:</strong> autonomia intelectual e estratégica para criar startups e serviços de ruptura.</li>
+    </ul>
+
+    <h2>Didática For Inventors — simples, clara e orientada à criação</h2>
+    <p>Qualquer pessoa com ensino médio completo consegue acompanhar. Usamos linguagem direta, analogias e exemplos visuais. Não exigimos matemática complexa; exigimos visão, disciplina e criatividade.</p>
+
+    <h2>Curso Livre • Certificação</h2>
+    <p>Certificação ao final. Aqui você cria <strong>produtos, empresas, tecnologias e até teorias</strong> — que amanhã podem ser ensinadas nas universidades. Trajetórias: <strong>Sócio Técnico</strong>, <strong>Sócio Inventor</strong>, <strong>Sócio Operacional</strong>, <strong>Sócio Comercial</strong> e <strong>Consultor/Franqueado</strong>.</p>
+  </section>
+
+  <!-- CONTEÚDO PADRÃO — Ciência da Computação -->
+  <section class="section" id="conteudo">
+    <span class="kicker">Programa</span>
+    <h2>Conteúdo Programático</h2>
+    <ul>
+      <li>• Conceitos, Ideias e Teorias da <strong>Engenharia Mecânica Aplicada & Ciência da Computação</strong> para Inventores Empreendedores</li>
+      <li>• Conceitos, Ideias e Teorias da <strong>Ciência da Computação aplicada aos Hospitais</strong> para Inventores Empreendedores</li>
+      <li>• Conceitos, Ideias e Teorias da <strong>Ciência da Computação aplicada à Medicina</strong> para Inventores Empreendedores</li>
+      <li>• Conceitos, Ideias e Teorias da <strong>Ciência da Computação aplicada à Robótica</strong> para Inventores Empreendedores</li>
+      <li>• Conceitos, Ideias e Teorias da <strong>Ciência da Computação aplicada à Administração</strong> para Inventores Empreendedores</li>
+      <li>• Conceitos, Ideias e Teorias do <strong>Ciência da Computação aplicada ao Direito Anti-Contenda: Tecnologias Pré-Crime e Anti-Contenda</strong> para Inventores Empreendedores</li>
+      <li>• Conceitos, Ideias e Teorias da <strong>Ciência da Computação aplicada à Ciência Ambiental</strong> para Inventores Empreendedores</li>
+      <li>• Conceitos, Ideias e Teorias da <strong>Ciência da Computação aplicada à Biotecnologia</strong> para Inventores Empreendedores</li>
+      <li>• Conceitos, Ideias e Teorias das <strong>Ciência da Computação aplicada ao Estado Online( O maior negócio do Século)</strong> para Inventores Empreendedores</li>
+      <li>• Conceitos, Ideias e Teorias das <strong>Ciência da Computação aplicada à Economia das Doenças</strong> para Inventores Empreendedores</li>
+      <li>• Conceitos, Ideias e Teorias da <strong>Ciência da Computação aplicada à Vida</strong> para Inventores Empreendedores</li>
+      <li>• Conceitos, Ideias e Teorias da <strong>Ciência da Computação aplicada ao Varejo</strong> para Inventores Empreendedores</li>
+    </ul>
+  </section>
+
+  <!-- Add-on: Trilhas Complementares -->
+  <section class="section" id="add-on">
+    <span class="kicker">Add-on Opcional</span>
+    <h2>Trilhas Complementares — Aplicações de Computação</h2>
+    <p>Escolha um trilho para acelerar aplicação, validação e mercado.</p>
+    <ul>
+      <li><strong>Backend &amp; APIs:</strong> microsserviços, gateways, filas e resiliência.</li>
+      <li><strong>Dados &amp; IA:</strong> data lakes, pipelines, feature stores e MLOps.</li>
+      <li><strong>Segurança &amp; Identidade:</strong> criptografia aplicada, IAM, zero-trust e auditoria.</li>
+      <li><strong>Edge &amp; IoT:</strong> telemetria, dispositivos e computação de borda.</li>
+      <li><strong>Produtos de Saúde:</strong> privacidade, interoperabilidade, LGPD e qualidade.</li>
+      <li><strong>Gov/Justiça 5.0:</strong> ODR, prevenção de litígio (anti-contenda), identidade verificável.</li>
+      <li><strong>Finanças &amp; Pagamentos:</strong> risco, antifraude e conciliação em escala.</li>
+      <li><strong>Tempo Real &amp; Games:</strong> latência, sincronização e observabilidade.</li>
+    </ul>
+    <div class="ctas">
+      <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">📱 WhatsApp — Incluir Módulo</a>
+      <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">📧 E-mail — Incluir Módulo</a>
+    </div>
+  </section>
+
+  <!-- Selo -->
+  <section class="section" style="text-align:center">
+    <div class="badge" style="font-size:13px">🧠 Curso Inédito no Mundo — Formação Transdisciplinar de Alto Impacto</div>
+  </section>
+
+</main>
+
+<footer>© 2025 For Inventors. Todos os direitos reservados.</footer>
+</body>
+</html>

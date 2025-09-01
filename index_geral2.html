@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>For Inventors — Índice Geral</title>
+<style>
+:root{
+  /* Paleta For Inventors: dark premium + dourado */
+  --bg:#0c0c0e; --hero:#121216; --panel:#15161a; --card:#191a20;
+  --text:#f4f4f6; --muted:#b8bdc9;
+  --accent:#fcd14f;          /* dourado */
+  --accent-2:#22d3ee;        /* ciano suave p/ detalhe */
+  --whatsapp:#25d366;        /* CTA WhatsApp */
+  --email:#3b82f6;           /* CTA E-mail   */
+  --shadow:rgba(252,209,79,.14);
+}
+*{box-sizing:border-box}
+body{
+  margin:0;font-family:"Segoe UI",Tahoma,Arial,Helvetica,sans-serif;
+  background:
+    radial-gradient(1200px 800px at 90% -10%, rgba(252,209,79,.08), transparent 60%),
+    radial-gradient(900px 700px at -10% 25%, rgba(34,211,238,.08), transparent 60%),
+    var(--bg);
+  color:var(--text); line-height:1.65;
+}
+header{
+  background:linear-gradient(180deg,var(--hero) 0%, rgba(18,18,22,.92) 60%, transparent 100%);
+  padding:56px 18px 20px; text-align:center;
+}
+.badge{
+  display:inline-block; padding:6px 12px; border-radius:999px;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+  color:#0b0b0e; font-weight:800; font-size:12px; letter-spacing:.4px;
+  box-shadow:0 10px 30px var(--shadow);
+}
+h1{margin:16px auto 8px; max-width:1050px; font-size:36px; line-height:1.15}
+.subtitle{color:var(--muted); max-width:960px; margin:8px auto 16px; font-size:18px}
+.top-actions{display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-bottom:6px}
+.btn{
+  display:inline-block; text-decoration:none; font-weight:800; font-size:14px;
+  padding:10px 14px; border-radius:10px; border:1px solid transparent; transition:.2s
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent-2)); color:#0b0b0e}
+.btn-ghost{background:rgba(255,255,255,.05); border-color:rgba(255,255,255,.16); color:#f4f4f6}
+.btn-whats{background:var(--whatsapp); color:#071d10}
+.btn-mail{background:var(--email); color:#081523}
+
+.wrap{max-width:1200px; margin:26px auto 60px; padding:0 18px}
+.section{
+  background:var(--panel); border:1px solid rgba(255,255,255,.08);
+  border-radius:14px; padding:22px 18px; margin:18px 0;
+  box-shadow:0 10px 30px var(--shadow);
+}
+.section h2{margin:0 0 12px; font-size:24px; color:var(--accent)}
+.section p{margin:0 0 10px; color:var(--muted)}
+.grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px}
+@media (max-width:1000px){ .grid{grid-template-columns:repeat(2,1fr)} }
+@media (max-width:640px){ .grid{grid-template-columns:1fr} h1{font-size:28px} }
+
+.card{
+  background:var(--card); border:1px solid rgba(255,255,255,.08);
+  border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:10px;
+  position:relative; overflow:hidden;
+}
+.card::after{
+  content:""; position:absolute; inset:auto -40px 0 -40px; height:6px;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2)); opacity:.35;
+}
+.card h3{margin:0; font-size:20px}
+.card p{margin:0; color:#e6e7ee}
+.tags{display:flex; gap:8px; flex-wrap:wrap; margin-top:2px}
+.tag{
+  font-size:12px; padding:4px 8px; border-radius:999px;
+  border:1px solid rgba(255,255,255,.14); color:#dfe4f4;
+  background:rgba(255,255,255,.04)
+}
+.actions{display:flex; gap:8px; flex-wrap:wrap; margin-top:10px}
+
+footer{text-align:center; color:#b8bdc9; font-size:14px; padding:28px 0 40px}
+.manifesto{
+  background:rgba(255,255,255,.03); border:1px solid rgba(255,255,255,.08);
+  border-radius:12px; padding:14px; margin-top:10px; color:#d8dbea;
+}
+</style>
+</head>
+<body>
+<header>
+  <span class="badge">FOR INVENTORS • Índice Geral</span>
+  <h1>Invenção → Inovação de Mercado (Ruptura por Design)</h1>
+  <p class="subtitle">Plataforma para inventores e empreendedores construírem <strong>novos modelos de negócio</strong> com ciência e tecnologia — não para manter o status quo.</p>
+  <div class="top-actions">
+    <a class="btn btn-primary" href="investimento.html">💰 Ver Investimentos</a>
+    <a class="btn btn-ghost" href="index_medicina.html">🩺 Ver Índice de Medicina</a>
+    <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">📱 WhatsApp</a>
+    <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">📧 E-mail</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- TECNOLOGIAS & TRANSVERSAIS -->
+  <section class="section">
+    <h2>Tecnologias & Trilhas Transversais</h2>
+    <p>Disciplinas-base aplicáveis a saúde, agro, indústria, serviços, direito e governo.</p>
+    <div class="grid">
+      <article class="card">
+        <h3>Biotecnologia For Inventors</h3>
+        <p>Aplicações humanas, agro e ambientais com foco em produto e IP.</p>
+        <div class="tags"><span class="tag">Modelos</span><span class="tag">Moats</span><span class="tag">IP</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="biotecnologia%20for%20inventor.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="investimento.html">Investimento</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Ciência da Computação For Inventors</h3>
+        <p>IA, sistemas distribuídos e automação conectando negócios reais.</p>
+        <div class="tags"><span class="tag">IA & Robótica</span><span class="tag">Mercado</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="computacao%20for%20inventors.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="investimento.html">Investimento</a>
+        </div>
+      </article>
+  <article class="card">
+        <h3>Direito For Inventors</h3>
+        <p>Anti-Contenda, Neurodireito, prova digital e modelos jurídicos de plataforma.</p>
+        <div class="tags">
+          <span class="tag">ODR</span><span class="tag">LGPD</span><span class="tag">Prova Digital</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="for-inventors-direito.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="investimento.html">Investimento</a>
+          <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+          <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+        </div>
+      </article>
+  <article class="card">
+        <h3>Ciência Ambiental For Inventors</h3>
+        <p>Ambientes saudáveis, energia/água, biossegurança e oportunidades de mercado.</p>
+        <div class="tags">
+          <span class="tag">Sustentabilidade</span><span class="tag">Operações</span><span class="tag">IoT</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="for-inventors-ambiental.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="investimento.html">Investimento</a>
+          <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+          <a class="btn btn-mail" target="_blank" href="mailto:drclaudiocutrim@gmail.com">E-mail</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>IA For Inventors</h3>
+        <p>Arquiteturas, agentes, visão e NLP voltados à geração de valor.</p>
+        <div class="tags"><span class="tag">Foundation</span><span class="tag">Agentes</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="ia.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="investimento.html">Investimento</a>
+        </div>
+      </article>
+ <article class="card">
+        <h3>Estado Online For Inventors</h3>
+        <p>A maior negócio do século.</p>
+        <div class="tags">
+          <span class="tag">Novos Modelos de Negócios</span><span class="tag">Moats</span><span class="tag">Inovações e Rupturas Civilizacionais</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="estado online.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="investimento.html">Investimento</a>
+          <a class="btn btn-whats" target="_blank" href="https://wa.me/5591980144854">WhatsApp</a>
+          <a class="btn btn-mail" target="_blank" href="mailto:nexialbusiness@proton.me">E-mail</a>
+        </div>
+      </article>
+      <article class="card">
+        <h3>Robótica For Inventors</h3>
+        <p>Robôs, automação & controle para saúde, agro e indústria.</p>
+        <div class="tags"><span class="tag">Hardware</span><span class="tag">Autonomia</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="Rob%C3%B3tica.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="investimento.html">Investimento</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Engenharia Mecânica For Inventors</h3>
+        <p>Produto físico, fabricação e integração com materiais avançados.</p>
+        <div class="tags"><span class="tag">Projeto</span><span class="tag">Fabricação</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="engenharia%20mecanica.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="investimento.html#investimento">Investimento</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Engenharia do Trabalho For Inventors</h3>
+        <p>Segurança, ergonomia e IA preditiva para operações eficientes.</p>
+        <div class="tags"><span class="tag">Safety</span><span class="tag">Ergo</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="Engenharia_trabalho.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="investimento.html">Investimento</a>
+        </div>
+      </article>
+<article class="card">
+        <h3>Habitação & Interiores For Inventors</h3>
+        <p>A busca por rupturas em conceitos, design e modelos de negócios.</p>
+        <div class="tags">
+          <span class="tag">Novos Modelos de Negócios</span><span class="tag">Moats</span><span class="tag">Inovações</span>
+        </div>
+        <div class="actions">
+          <a class="btn btn-primary" href="for-inventors-habitacao.html">Em Breve !</a>
+         
+        </div>
+      </article>
+      <article class="card">
+        <h3>Agronomia For Inventors</h3>
+        <p>Biotech, materiais, robótica aplicada e produção vegetal inovadora.</p>
+        <div class="tags"><span class="tag">AgTech</span><span class="tag">Bio</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="agronomia.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="investimento.html">Investimento</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="manifesto">
+      For Inventors não “melhora o que já existe”. Criamos <strong>novos modelos</strong> apoiados em ciência e tecnologia
+      com linguagem acessível a qualquer pessoa com ensino médio completo. Sem jargões — com resultado.
+    </div>
+  </section>
+
+  <!-- MEDICINA -->
+  <section class="section">
+    <h2>Medicina — Cursos já publicados</h2>
+    <p>Cards já conectados às suas páginas atuais de curso.</p>
+    <div class="grid">
+
+      <article class="card">
+        <h3>Clínica Médica For Inventors</h3>
+        <p>Integração de tecnologias para prática clínica e negócios.</p>
+        <div class="tags"><span class="tag">Modelos</span><span class="tag">IA</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="cl%C3%ADnica%20m%C3%A9dica.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="cl%C3%ADnica%20m%C3%A9dica.html#investimento">Investimento</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Cardiologia For Inventors</h3>
+        <p>IA diagnóstica, materiais e economia das doenças.</p>
+        <div class="tags"><span class="tag">IA</span><span class="tag">Materiais</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="cardiologia for inventors.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="cardiologia%20for%20inventors.html#investimento">Investimento</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Dermatologia & Estética For Inventors</h3>
+        <p>Biotech, dispositivos e IA de imagem.</p>
+        <div class="tags"><span class="tag">Biotech</span><span class="tag">Imagem</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="dermatologia.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="dermatologia.html#investimento">Investimento</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Geriatria For Inventors</h3>
+        <p>Longevidade, assistive tech e modelos domiciliares.</p>
+        <div class="tags"><span class="tag">Assistive</span><span class="tag">Home</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="Geriatria%20For%20Inventors.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="Geriatria%20For%20Inventors.html#investimento">Investimento</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Medicina do Esporte For Inventors</h3>
+        <p>Biomecânica, wearables e performance.</p>
+        <div class="tags"><span class="tag">Wearables</span><span class="tag">Biomecânica</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="medicina_esportiva.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="medicina_esportiva.html#investimento">Investimento</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Medicina do Trabalho For Inventors</h3>
+        <p>Safety by design e IA preditiva.</p>
+        <div class="tags"><span class="tag">Segurança</span><span class="tag">IA</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="medicina_trabalho.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="medicina_trabalho.html#investimento">Investimento</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Neurologia & Neurocirurgia For Inventors</h3>
+        <p>Interfaces, neuroeconomia e dispositivos.</p>
+        <div class="tags"><span class="tag">Neuro</span><span class="tag">Devices</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="Neurologia.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="Neurologia.html#investimento">Investimento</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Oncologia For Inventors</h3>
+        <p>Planejamento com IA, materiais e drug delivery.</p>
+        <div class="tags"><span class="tag">IA</span><span class="tag">Bio</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="Oncologia.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="Oncologia.html#investimento">Investimento</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Ortopedia For Inventors</h3>
+        <p>Materiais avançados, robótica assistiva e reabilitação.</p>
+        <div class="tags"><span class="tag">Materiais</span><span class="tag">Robótica</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="ortopedia.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="ortopedia.html#investimento">Investimento</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Pediatria For Inventors</h3>
+        <p>Devices lúdicos e prevenção orientada a dados.</p>
+        <div class="tags"><span class="tag">Devices</span><span class="tag">UX</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="pediatria.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="pediatria.html#investimento">Investimento</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Reumatologia For Inventors</h3>
+        <p>IA de imagem, biomarcadores e modelos de cuidado.</p>
+        <div class="tags"><span class="tag">IA</span><span class="tag">Bio</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="reumatologia.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="reumatologia.html#investimento">Investimento</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Saúde Pública For Inventors</h3>
+        <p>Interoperabilidade, vigilância inteligente e valor.</p>
+        <div class="tags"><span class="tag">Data Mesh</span><span class="tag">Vigilância</span></div>
+        <div class="actions">
+          <a class="btn btn-primary" href="sa%C3%BAde_p%C3%BAblica.html">Saiba Mais</a>
+          <a class="btn btn-ghost" href="sa%C3%BAde_p%C3%BAblica.html#investimento">Investimento</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>© 2025 For Inventors. Todos os direitos reservados.</footer>
+</body>
+</html>
